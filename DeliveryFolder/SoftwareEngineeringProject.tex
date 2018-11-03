@@ -22,7 +22,7 @@
 \begin{flushright}
 \begin{large}
 Dalle Rive Fabio - 920082 \\[4pt]
-Di Giacomantonio Marco -
+Di Giacomantonio Marco - 84515 \\[4pt]
 \end{large}
 \end{flushright}
 \newpage
@@ -103,32 +103,33 @@ Di Giacomantonio Marco -
 	\newpage
 \section{Introduction}
 \subsection{Purpose}
-The purpose of this project is to build a system, call it Data4Help, that allows third parties to monitor the position and health status of users. The data are collected by TrackMe, the company that wants to develop Data4Help, and are shared with other companies which are interested in those data. AutomatedSOS is a system build on top of Data4Help. AutomatedSOS is a service designed for elderly people which is able to intervene calling an ambulance, if the health parameters of the user are below some fixed thresholds.
+The purpose of this project is to build a system, called Data4Help, that allows third parties to monitor the position and health status of users. The data are collected by TrackMe, the company that wants to develop Data4Help, and are shared with other companies which are interested in those data.
+Furthermore, TrackMe wants to develop AutomatedSOS, a system build on top of Data4Help. AutomatedSOS is a service designed for elderly people, it is able to intervene by calling an ambulance if the health parameters of the user are below some fixed thresholds.
 \subsection{Scope}
 \subsubsection{Description of the given problem}
-TrackMe is a company that wants to develop a software-based service allowing third parties to monitor the location and health status of users. This service is called Data4Help. The service supports the registration of the visitors who, by registering, allows TrackMe to acquire their data. Also it supports the registration of third parties. After registration, these third parties can request: 
+TrackMe is a company that wants to develop a software-based service allowing third parties to monitor the location and health status of users. This service is called Data4Help. The service supports the registration of the visitors who, by registering, allow TrackMe to acquire their data. Also it supports the registration of third parties. After registration, these third parties can request: 
 \begin{itemize}
 	\item Access to the data of some specific user.
 	\item Access to anonymized data of groups of users.
 \end{itemize}
-TrackMe also wants to develop a non-intrusive SOS service for elderly people, call it AutomatedSOS. AutomatedSOS is build on top of Data4Help. This service is designed to monitor health status of users and send, to the location of the user, an ambulance if some parameters are below specified thresholds. 
+TrackMe also wants to develop a non-intrusive SOS service for elderly people, called AutomatedSOS. AutomatedSOS is build on top of Data4Help. This service is designed to monitor health status of users and to send an ambulance to the location of the user if some parameters are below some specified thresholds. 
 \subsubsection{Goals}
 \begin{itemize}
-	\item {[G1]} Visitor can become a registered user after providing credentials.
+	\item {[G1]} Visitor can become User after providing credentials.
 	\item {[G2]} User can be recognized providing a username and a password.
 	\item {[G3]} User can accept or reject the request of access to his data formulated by companies.
 	\item {[G4]} If user's parameters are below specified thresholds, an ambulance is called within 5 seconds. 
 	\begin{itemize}
 		\item {[G4.1]} Ambulance is required at current user's location. 
 	\end{itemize}
-	\item {[G5]} Company can become a registered user after providing credentials. 
+	\item {[G5]} Company can become a User after providing credentials. 
 	\item {[G6]} Company can be recognized providing a username and a password.
 	\item {[G7]} Company can formulate a request to see anonymized data of a group of users.
 	\item {[G8]} Company can formulate a request to see data of a specific user providing his SSN.
 	\item {[G9]} Company can see anonymized data of a group of users.
 	\item {[G10]} Company can see data of a specific user providing his SSN.
 	\item {[G11]} Company can subscribe to users' new data.
-	\item {[G12]} TrackMe can anonymized data.
+	\item {[G12]} TrackMe can anonymize data.
 	\item {[G13]} TrackMe can show users' requested data to companies.
 	\item {[G14]} TrackMe can forward companies' requests to users. 
 	\item {[G15]} TrackMe can sign a user as follow-able  by a specific company. 
@@ -137,11 +138,11 @@ TrackMe also wants to develop a non-intrusive SOS service for elderly people, ca
 \subsection{Definitions, Acronyms, Abbreviations}
 \subsubsection{Definitions}
 \begin{itemize}
-	\item\textbf{Visitor:} a person who still have to register to Data4Help and AutomatedSOS.
-	\item\textbf{User:} a person who is registered to Data4Help and/or AutomatedSOS.
-	\item\textbf{Third Companies:} 
-	\item\textbf{Data:} Location of a user + heart rate + calories burned + time spent exercising + step walked 
-	\item \textbf{Threshold:} Flexible value related to the biomedical data that can be acquired by the wearable device in which the system is installed.  This value is computed by well-known equation that operate with user's data. It also depends from the kind of activity that a user is doing.  
+	\item\textbf{Visitor:} a person who still has to register to Data4Help and AutomatedSOS.
+	\item\textbf{User:} a person who is registered to Data4Help and AutomatedSOS.
+	\item\textbf{Third Parties / Companies:} 
+	\item\textbf{Data:} User's monitored data: location + heart rate + calories burned + time spent exercising + step walked 
+	\item \textbf{Threshold:} Flexible value related to the biomedical data acquired by the wearable device in which the system is installed. This value is computed by well-known equation that operate with user's data. It also depends from the kind of activity that a user is doing.  
 	\item \textbf{Request:} Formal request that a company issue to TrackMe in order to access data of a single user or a group of users. 
 	\item \textbf{Subscribe to data:} A company which is subscribed to user's data or to group's data, receives the requested data as soon as they are produced.  
 	\item \textbf{Pendent user:} A user that a company want to follow but has not answered to the following request yet.
@@ -176,13 +177,14 @@ TrackMe also wants to develop a non-intrusive SOS service for elderly people, ca
 \begin{itemize}
 	\item {[D1]} The user's email is already known by TrackMe.
 	\item {[D2]} The user's registration process is carried out through a survey that is sent to the user by an external survey service. 
-	\item {[D3]} The user
-	\item {[D4]}
-	\item {[D5]}
-	\item {[D6]}
-	\item {[D7]}
-	\item {[D8]}
-	\item {[D9]}
+	\item {[D3]} A safe user has heartbeat between values x and y depending on his current state (rest, running ecc...).
+	\item {[D4]} 5 seconds are necessary to send user location and call an ambulance when parameters are below the threshold.
+	\item {[D5]} Usernames used in the system are unique.
+	\item {[D6]} Users position is determined by using the GPS inside the smartwatch.
+	\item {[D7]} When the system shows the position of a user it means that the user is
+actually there.
+	\item {[D8]} During the registration process the user inserts his main physical data (height, weight, ...).
+	\item {[D9]} The user has the physical characteristics that he inserted in the system.
 	\item {[D10]}
 	\item {[D11]}
 \end{itemize}
@@ -190,10 +192,26 @@ TrackMe also wants to develop a non-intrusive SOS service for elderly people, ca
 \subsection{External interface requirements}
 \subsubsection{User interfaces}
 \subsubsection{Hardware interfaces}
+\begin{itemize}
+	\item GPS
+	\item Bluetooth
+	\item Internet Connection
+	\item Photoplethysmography (PPG)
+	\item Accelerometer
+\end{itemize}
+\end{itemize}
 \subsubsection{Software interfaces}
+\begin{itemize}
+	\item Google Maps
+	\item Ambulance Service
+\end{itemize}
 \subsubsection{Communication interfaces}
 \subsection{Scenarios}
 \subsection{Functional requirements}
+\begin{itemize}
+	\item {[R1]} \boldtf (if user’s heartbeat overcome the threshold the system must call an ambulance within 5 seconds (...) THE DOCUMENT SAYS BELOW —> ASK! ).
+	\item Ambulance Service
+\end{itemize}
 \subsubsection{Use case diagram}
 
 \begin{center}
@@ -444,6 +462,9 @@ All the exceptions are handled notifying the issues to the user and taking back 
 
 \subsubsection{Sequence diagram}
 \subsection{Performance requirements}
+\begin{itemize}
+	\item AutomatedSOS answers within 5 seconds.
+\end{itemize}
 \subsection{Design constraints}
 \subsubsection{Standard compliance}
 \subsubsection{Hardware limitation}
