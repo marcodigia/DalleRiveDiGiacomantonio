@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.19)  2 NOV 2018 17:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.19)  6 NOV 2018 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -141,81 +141,81 @@ Package pdftex.def Info: PolimiLogo.png  used on input line 12.
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
  <./PolimiLogo.png>] [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 111.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 112.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
  [4] [5] [6]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 200.
+(Font)              <7> on input line 217.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 200.
+(Font)              <5> on input line 217.
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 200--222
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 217--239
  [] 
  []
 
 [7]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 225--244
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 242--261
  [] 
  []
 
 [8]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 247--262
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 264--279
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 265--285
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 282--302
  [] 
  []
 
 [9]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 288--305
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 305--322
  [] 
  []
 
 [10]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 308--322
- [] 
- []
-
-
 Overfull \hbox (46.36111pt too wide) in paragraph at lines 325--339
  [] 
  []
 
+
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 342--356
+ [] 
+ []
+
 [11]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 342--359
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 359--376
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 362--378
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 379--395
  [] 
  []
 
 [12]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 381--398
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 398--415
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 401--411
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 418--428
  [] 
  []
 
 [13]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 414--427
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 431--444
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 430--443
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 447--460
  [] 
  []
 
@@ -227,14 +227,14 @@ Here is how much of TeX's memory you used:
  5335 multiletter control sequences out of 15000+600000
  5158 words of font info for 19 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,25p,556b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,25p,427b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on SoftwareEngineeringProject.pdf (15 pages, 104883 bytes).
+Output written on SoftwareEngineeringProject.pdf (15 pages, 106482 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
