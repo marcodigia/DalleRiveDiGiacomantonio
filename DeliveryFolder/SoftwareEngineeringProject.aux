@@ -12,32 +12,45 @@
 \@writefile{toc}{\contentsline {section}{\numberline {2}Overall Description}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Product perspective}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Product functions}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Acquisition of users' data}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Company access to users' data}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Forwarding of following requests directly to the users and data anoymization}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}AutomatedSOS}{7}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}User characteristics}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Assumption, dependencies and constraints}{7}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Domain assumptions}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Specific Requirements}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}External interface requirements}{7}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}User interfaces}{7}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Hardware interfaces}{7}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Software interfaces}{8}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.4}Communication interfaces}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Scenarios}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Functional requirements}{8}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Use case diagram}{8}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Sequence diagram}{14}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Performance requirements}{14}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Design constraints}{15}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}Standard compliance}{15}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}Hardware limitation}{15}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.3}Other constraints}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Software system attributes}{15}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.1}Reliability}{15}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.2}Security}{15}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.3}Maintainability}{15}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.4}Compatibility}{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Formal Analysis Using Alloy}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Alloy model}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}World generated}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Alloy results}{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Effort Spent}{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Resources}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Assumption, dependencies and constraints}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Domain assumptions}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Specific Requirements}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}External interface requirements}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}User interfaces}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Hardware interfaces}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Software interfaces}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.4}Communication interfaces}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Scenarios}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Functional requirements}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}[G1] Visitor can become User after providing credentials.}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}[G3] User can accept or reject the request of access to his data formulated by companies.}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}[G4] If user\IeC {\textquoteright }s parameters are below specified thresholds, an ambulance is called within 5 seconds. <[G4.1]> Ambulance is required at current user\IeC {\textquoteright }s location.}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.4}[G5] Company can become a User after providing credentials.}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.5}[G6] Company can be recognized providing a username and a password.}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.6}[G7] Company can formulate a request to see anonymized data of a group of users.}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.7}[G8] Company can formulate a request to see data of a specific user pro- viding his SSN.}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.8}[G9] Company can see anonymized data of a group of users.}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.9}[G10] Company can see data of a specific user providing his SSN.}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.10}Use case diagram}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.11}Sequence diagram}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Performance requirements}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Design constraints}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}Standard compliance}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}Hardware limitation}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.3}Other constraints}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Software system attributes}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.1}Reliability}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.2}Security}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.3}Maintainability}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.4}Compatibility}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Formal Analysis Using Alloy}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Alloy model}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}World generated}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Alloy results}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Effort Spent}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Resources}{18}}

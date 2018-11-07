@@ -116,7 +116,6 @@ TrackMe also wants to develop a non-intrusive SOS service for elderly people, ca
 \subsubsection{Goals}
 \begin{itemize}
 	\item {[G1]} Visitor can become User after providing credentials.
-	\item {[G2]} User can be recognized providing a username and a password.
 	\item {[G3]} User can accept or reject the request of access to his data formulated by companies.
 	\item {[G4]} If user's parameters are below specified thresholds, an ambulance is called within 5 seconds. 
 	\begin{itemize}
@@ -170,25 +169,47 @@ TrackMe also wants to develop a non-intrusive SOS service for elderly people, ca
 \end{description}
 \section{Overall Description}
 \subsection{Product perspective}
-Data4Help and AutomatedSOS are intended as a background application that are installed inside a smart watch. The systems-to-be acquire data of the users through the smart watch. The user register himself for Data4Help on the website page that TrackMe provide for this application. Users access to the web page through their Google or Apple account. These accounts are used by TrackMe in order to understand from which devices the company will acquire data.  
+Data4Help and AutomatedSOS are intended as a background application that are installed inside a smart watch. The systems-to-be acquire data of the users through the smart watch. The user register himself for Data4Help on the website page that TrackMe provide for this application. Users access to the web page through their Google or Apple account. These accounts are used by TrackMe in order to understand from which devices it will acquire data.
 \subsection{Product functions}
-Considering all the goals previously presented, 
+Considering all the goals previously presented, we can sum up into four categories the main functions of the product:
+\subsubsection{Acquisition of users' data}
+Data4Help runs on a smartwatch, assumed to be able to communicate the data directly to TrackMe's servers. It means that this product works only with smartwatch with an internet connection. Future updates will enable to use also smartwatch without internet connection to run Data4Help and AutomatedSOS.
+\subsubsection{Company access to users' data}
+Data4Help enables companies to access data of a specific user or of groups of users. Companies access to these data through the web page. Data are shown in a user-friendly way, generating automatically graphs. Some samples of the GUI will be shown in the corresponding section.
+\subsubsection{Forwarding of following requests directly to the users and data anoymization}
+Companies are able to send following requests, in order to access user data. Data4Help allows TrackMe to put in contact companies and users. Every time that a company request to access some data, Data4Help notfies TrackMe's servers. Analizing the request, TrackMe's servers will decide how to proceed:\\
+\begin{itemize}
+\item If the request concerns a specific user, TrackMe sends an email to the user asking to accept or reject it
+\item If the request concerns a group of users, anonymizes the corresponding data 
+\end{itemize}
+\subsubsection{AutomatedSOS}
+While registering Data4Help, the user is asked to submit his age. Basing on some creteria chosen from the managment, a value \emph{Age} is chosen. If the user's age is greater than \emph{Age} AutomatedSOS is activated automatically. AutomatedSOS is a service that monitors the heartbeat of the user and if it's lower than \emph{Threshold}, calls an ambulance addressed to the user's position within 5 seconds.
+\end{enumerate}
 \subsection{User characteristics}
+\begin{itemize}
+\item \emph{Visitor}: a person not registered. The only thing he can do is proceeding with sing up.
+\item \emph{User}: a person passed through a successful registration process. His data can be tracked, he can accept or reject compaines' following request.
+ \item \emph{Company}: an entity that can be recognised as a company. It can see data of a specific user or anonimous data of a group of users. 
+ \item \emph{TrackMe}: the set of employees working for TrackMe and the whole hardware and software interfaces that interact with Data4Help and AutomatedSOS.
+\end{itemize}
 \subsection{Assumption, dependencies and constraints}
 \subsubsection{Domain assumptions}
 \begin{itemize}
 	\item {[D1]} The user's email is already known by TrackMe.
-	\item {[D2]} The user's registration process is carried out through a survey that is sent to the user by an external survey service. 
-	\item {[D3]} A safe user has heartbeat between values x and y depending on his current state (rest, running ecc...).
+	\item {[D2]} Only real companies can sing up as compaines.
+	\item {[D3]} Only companies can see users' data.
 	\item {[D4]} 5 seconds are necessary to send user location and call an ambulance when parameters are below the threshold.
-	\item {[D5]} Usernames used in the system are unique.
+	\item {[D5]} Usernames used in the system are unique. Users have only the username.
 	\item {[D6]} Users position is determined by using the GPS inside the smartwatch.
 	\item {[D7]} When the system shows the position of a user it means that the user is
 actually there.
-	\item {[D8]} During the registration process the user inserts his main physical data (height, weight, ...).
+	\item {[D8]} During the registration process the user inserts his main data (height, weight, age, place where he lives).
 	\item {[D9]} The user has the physical characteristics that he inserted in the system.
-	\item {[D10]}
-	\item {[D11]}
+	\item {[D10]} Smartwatch connects directly to TrackMe and send the data acquired. Data4Help and AutomatedSOS run only on smartwatch with internet access.
+	\item {[D11]} The user is able to accept or reject the following requests by clicking a button on the email that TrackMe sends to him.
+	\item {[D12]} Every time that a user accept or reject a following request a notification is sent to Data4Help.
+	\item {[D13]} Companies have a username and a password and they are unique.
+	\item {[D14]} TrackMe is able to anonymize data based on the group request only if the group has more than 1000 users.
 \end{itemize}
 \section{Specific Requirements}
 \subsection{External interface requirements}
@@ -209,9 +230,62 @@ actually there.
 \subsubsection{Communication interfaces}
 \subsection{Scenarios}
 \subsection{Functional requirements}
+\subsubsection{[G1] Visitor can become User after providing credentials.}
 \begin{itemize}
-%	\item {[R1]} \boldtf (if user’s heartbeat overcome the threshold the system must call an ambulance within 5 seconds (...) THE DOCUMENT SAYS BELOW —> ASK! ).
-	\item Ambulance Service
+\item {[R1]} The system must allow a visitor to begin the registration process. During the process the system will ask him to provide credentials.
+\item {[D5]} Usernames used in the system are unique.
+\item {[D8]} During the registration process the user inserts his main data (height, weight, age, place where he lives).
+\item {[D9]} The user has the physical characteristics that he inserted in the system.
+\end{itemize}
+\subsubsection{[G3] User can accept or reject the request of access to his data formulated by companies.}
+\begin{itemize}
+\item {[D1]} The user's email is already known by TrackMe.
+\item {[D11]} The user is able to accept or reject the following requests by clicking a button on the email that TrackMe sends to him.
+\item {[D12]} Every time that a user accept or reject a following request a notification is sent to Data4Help.
+\item {[R2]} Each time that an accepting or rejecting notification is sent to Data4Help, the system must mark a \emph{Pendent User} as not pendent anymore.
+\item {[R3]} Each time that a user changes state from pendent to non-pendent, the corresponding single user request in the company list moves from dandling to accepted.
+\end{itemize}
+\subsubsection{[G4] If user’s parameters are below specified thresholds, an ambulance is called within 5 seconds. <[G4.1]> Ambulance is required at current user’s location.}
+\begin{itemize}
+\item {[R4} The system must be able to monitor the user heartrate through hardware interfaces that are installed in the smartwatch.
+\item {[D10]} Smartwatch connects directly to TrackMe and send the data acquired. Data4Help and AutomatedSOS run only on smartwatch with internet access.
+\item {[D6]} Users position is determined by using the GPS inside the smartwatch.
+\item {[D7]} When the system shows the position of a user it means that the user is actually there.
+\item {[D4]} 5 seconds are necessary to send user location and call an ambulance when parameters are below the threshold.
+\end{itemize}
+\subsubsection{[G5] Company can become a User after providing credentials.}
+\begin{itemize}
+\item {[R5]} The system must allow a company to begin the registration process. During the process the system will ask to provide credentials.
+\item {[D2]} Only real companies can sing up as compaines.
+\item {[R6]} At the end of the registration process, the system must provide to the company a username and a password.
+\item {[D13]} Companies have a username and a password and they are unique.
+\end{itemize}
+\subsubsection{[G6]  Company can be recognized providing a username and a password.}
+\begin{itemize}
+\item {[D13]} Companies have a username and a password and they are unique.
+\item {[R7]} The company can log in to the website by providing the combination of a username and a password that match its account.
+\end{itemize}
+\subsubsection{[G7] Company can formulate a request to see anonymized data of a group of users.}
+\begin{itemize}
+\item {[R8]} The system must allow the company to formulate a group of users request.
+\item {[R9]} The system must allow the company to fill in the request via a drop down menu.
+\item {[R10]} The system must allow the company to send a notification to TrackMe software interfaces.
+\end{itemize}
+\subsubsection{[G8] Company can formulate a request to see data of a specific user pro- viding his SSN.}
+\begin{itemize}
+\item {[R11]} The system must allow the company to formulate a single user request.
+\item {[R12]} The system must allow the company to fill in the request by inserting the user's SSN.
+\item {[R10]} The system must allow the company to send a notification to TrackMe software interfaces.
+\end{itemize}
+\subsubsection{[G9] Company can see anonymized data of a group of users.}
+\begin{itemize}
+\item {[D3]} Only companies can see users’ data.
+\item {[D14]} TrackMe is able to anonymize data based on the group request only if the group has more than 1000 users.
+\item {[R13]} The system must allow companies to see the data that TrackMe was able to anonymize and for which exist the group request.
+\end{itemize}
+\subsubsection{[G10] Company can see data of a specific user providing his SSN.}
+\begin{itemize}
+\item {[]}
 \end{itemize}
 \subsubsection{Use case diagram}
 
