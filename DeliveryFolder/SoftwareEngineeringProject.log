@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  7 NOV 2018 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  7 NOV 2018 21:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -154,117 +154,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-
-! LaTeX Error: \begin{document} ended by \end{enumerate}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.187 \end{enumerate}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.187 \end{enumerate}
-                     
-Things are pretty mixed up, but I think the worst is over.
-
 [7] [8]
-Overfull \hbox (14.19505pt too wide) in paragraph at lines 245--246
+Overfull \hbox (14.19505pt too wide) in paragraph at lines 246--247
 []\OT1/cmr/m/n/10 [R2] Each time that an ac-cept-ing or re-ject-ing no-ti-fi-ca
 -tion is sent to Data4Help,
  []
 
 [9] [10]
-Overfull \hbox (3.445pt too wide) in paragraph at lines 272--273
+Overfull \hbox (3.445pt too wide) in paragraph at lines 273--274
 []\OT1/cmr/m/n/10 [R10] The sys-tem must al-low the com-pany to send a no-ti-fi
 -ca-tion to TrackMe
  []
 
 
-Overfull \hbox (3.445pt too wide) in paragraph at lines 278--279
+Overfull \hbox (3.445pt too wide) in paragraph at lines 279--280
 []\OT1/cmr/m/n/10 [R10] The sys-tem must al-low the com-pany to send a no-ti-fi
 -ca-tion to TrackMe
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 293.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 293.
-
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 293--317
- [] 
  []
 
 [11]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 320--333
- [] 
+Overfull \hbox (3.445pt too wide) in paragraph at lines 307--308
+[]\OT1/cmr/m/n/10 [R10] The sys-tem must al-low the com-pany to send a no-ti-fi
+-ca-tion to TrackMe
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 313.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 313.
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 336--356
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 313--337
  [] 
  []
 
 [12]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 359--376
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 340--353
  [] 
  []
 
 [13]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 379--393
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 356--376
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 396--410
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 379--396
  [] 
  []
 
 [14]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 413--429
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 399--413
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 432--448
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 416--430
  [] 
  []
 
 [15]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 451--466
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 433--449
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 469--479
- [] 
- []
-
-
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 482--495
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 452--468
  [] 
  []
 
 [16]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 498--511
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 471--486
+ [] 
+ []
+
+
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 489--502
  [] 
  []
 
 [17] [18] (./SoftwareEngineeringProject.aux) ) 
 Here is how much of TeX's memory you used:
- 1442 strings out of 492649
- 21163 string characters out of 6129622
- 90249 words of memory out of 5000000
- 5337 multiletter control sequences out of 15000+600000
+ 1441 strings out of 492649
+ 21158 string characters out of 6129622
+ 89249 words of memory out of 5000000
+ 5336 multiletter control sequences out of 15000+600000
  5504 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,25p,546b,244s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,25p,546b,254s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist
@@ -272,7 +248,7 @@ t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist
 onts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SoftwareEngineeringProject.pdf (18 pages, 128499 bytes).
+Output written on SoftwareEngineeringProject.pdf (18 pages, 129158 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream

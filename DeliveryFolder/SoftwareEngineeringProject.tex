@@ -129,9 +129,7 @@ TrackMe also wants to develop a non-intrusive SOS service for elderly people, ca
 	\item {[G10]} Company can see data of a specific user providing his SSN.
 	\item {[G11]} Company can subscribe to users' new data.
 	\item {[G12]} TrackMe can anonymize data.
-	\item {[G13]} TrackMe can show users' requested data to companies.
 	\item {[G14]} TrackMe can forward companies' requests to users. 
-	\item {[G15]} TrackMe can sign a user as follow-able  by a specific company. 
 	\item {[G16]} ??? TrackMe able to withdraw a company ????
 \end{itemize} 
 \subsection{Definitions, Acronyms, Abbreviations}
@@ -145,6 +143,8 @@ TrackMe also wants to develop a non-intrusive SOS service for elderly people, ca
 	\item \textbf{Request:} Formal request that a company issue to TrackMe in order to access data of a single user or a group of users. 
 	\item \textbf{Subscribe to data:} A company which is subscribed to user's data or to users group's data, receives the requested data as soon as they are produced.  
 	\item \textbf{Pendent user:} A user that a company want to follow but has not answered to the following request yet.
+	\item \textbf{Single user request / Following request:} A formal request issued by a company to see the data of a user.
+	\item \textbf{Group of users request:} A formal request issued by a company to see the data of a group of users.
 \end{itemize}
 \subsubsection{Acronyms}
 \begin{itemize}
@@ -184,7 +184,6 @@ Companies are able to send following requests, in order to access user data. Dat
 \end{itemize}
 \subsubsection{AutomatedSOS}
 While registering Data4Help, the user is asked to submit his age. Basing on some creteria chosen from the managment, a value \emph{Age} is chosen. If the user's age is greater than \emph{Age} AutomatedSOS is activated automatically. AutomatedSOS is a service that monitors the heartbeat of the user and if it's lower than \emph{Threshold}, calls an ambulance addressed to the user's position within 5 seconds.
-\end{enumerate}
 \subsection{User characteristics}
 \begin{itemize}
 \item \emph{Visitor}: a person not registered. The only thing he can do is proceeding with sing up.
@@ -210,6 +209,8 @@ actually there.
 	\item {[D12]} Every time that a user accept or reject a following request a notification is sent to Data4Help.
 	\item {[D13]} Companies have a username and a password and they are unique.
 	\item {[D14]} TrackMe is able to anonymize data based on the group request only if the group has more than 1000 users.
+	\item {[D15]} Companies know the SSN of the user. 
+	\item {[D16]} A company that can see the data of a single user or of a group of users must also be able to choose the option that allows it to see users' data as soon as they are produced.
 \end{itemize}
 \section{Specific Requirements}
 \subsection{External interface requirements}
@@ -271,7 +272,7 @@ actually there.
 \item {[R9]} The system must allow the company to fill in the request via a drop down menu.
 \item {[R10]} The system must allow the company to send a notification to TrackMe software interfaces.
 \end{itemize}
-\subsubsection{[G8] Company can formulate a request to see data of a specific user pro- viding his SSN.}
+\subsubsection{[G8] Company can formulate a request to see data of a specific user providing his SSN.}
 \begin{itemize}
 \item {[R11]} The system must allow the company to formulate a single user request.
 \item {[R12]} The system must allow the company to fill in the request by inserting the user's SSN.
@@ -285,7 +286,26 @@ actually there.
 \end{itemize}
 \subsubsection{[G10] Company can see data of a specific user providing his SSN.}
 \begin{itemize}
-\item {[]}
+\item {[D3]} Only companies can see users’ data.
+\item {[D15]} Companies know the SSN of the user.
+\item {[D16]} The system must allow companies to see data of a single user if the single user request exists and if the user approved that request.
+\end{itemize}
+\subsubsection{[G11] Company can subscribe to users’ new data.}
+\begin{itemize}
+\item {[D3]} Only companies can see users’ data.
+\item {[R14]} The system must allow companies to see users' data as soon as they are produced.
+\item {[D16]} A company that can see the data of a single user or of a group of users must also be able to choose the option that allows it to see users' data as soon as they are produced.
+\end{itemize}
+\subsubsection{[G12] TrackMe can anonymize data.}
+\begin{itemize}
+\item {[D14]} TrackMe is able to anonymize data based on the group request only if the group has more than 1000 users.
+\item {[R15]} The system must be able to anonymize data.
+\end{itemize}
+\subsubsection{[G14] TrackMe can forward companies’ requests to users.}
+\begin{itemize}
+\item {[D1]} The user’s email is already known by TrackMe.
+\item {[R10]} The system must allow the company to send a notification to TrackMe software interfaces.
+\item {[R16]} The system must allow TrackMe to send an email to the user in order to enable the company to see his data.
 \end{itemize}
 \subsubsection{Use case diagram}
 
@@ -468,19 +488,6 @@ All the exceptions are handled notifying the issues to the user and taking back 
 \begin{center}
     \begin{tabular}{ | l | p{10cm} |}
     \hline
-    Name & TrackMe can show anonymized data related to a group of users to third parties. \\ \hline
-    Actors & TrackMe\\ \hline
-   	Goals & {[G13]}\\ \hline
-    Input Conditions & Third part has requested data of a group of users.\\ \hline
-    Event Flow & TrackMe sends the result of the research to the third part. \\ \hline
-    Output Conditions & The data requested from the third part are sent. \\ \hline
-    Exceptions & -  \\ \hline
-    \end{tabular}
-\end{center}
-
-\begin{center}
-    \begin{tabular}{ | l | p{10cm} |}
-    \hline
     Name & TrackMe can forward third parties requests to users. \\ \hline
     Actors & TrackMe\\ \hline
    	Goals & {[G14]}\\ \hline
@@ -491,22 +498,6 @@ All the exceptions are handled notifying the issues to the user and taking back 
     \end{enumerate} \\ \hline
     Output Conditions & The request of being followed by a company is sent to the user. \\ \hline
     Exceptions & -    \\ \hline
-    \end{tabular}
-\end{center}
-
-\begin{center}
-    \begin{tabular}{ | l | p{10cm} |}
-    \hline
-    Name & TrackMe can sign a user as follow-able. \\ \hline
-    Actors & TrackMe\\ \hline
-   	Goals & {[G15]}\\ \hline
-    Input Conditions & TrackMe is notified that a user has answered to a following request.\\ \hline
-    Event Flow & \begin{enumerate}
-    	\item TrackMe accesses the profile relative to the specific user.
-    	\item TrackMe reset the state of the user. The user is not pendent anymore.
-    \end{enumerate} \\ \hline
-    Output Conditions & The company that issued the request is notified \\ \hline
-    Exceptions & TrackMe receives a notification by a user that is not pendent. The notification is ignored by TrackMe.\\ \hline
     \end{tabular}
 \end{center}
 
