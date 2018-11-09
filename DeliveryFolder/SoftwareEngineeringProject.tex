@@ -170,6 +170,11 @@ TrackMe also wants to develop a non-intrusive SOS service for elderly people, ca
 \section{Overall Description}
 \subsection{Product perspective}
 Data4Help and AutomatedSOS are intended as a background application that are installed inside a smart watch. The systems-to-be acquire data of the users through the smart watch. The user register himself for Data4Help on the website page that TrackMe provide for this application. Users access to the web page through their Google or Apple account. These accounts are used by TrackMe in order to understand from which devices it will acquire data.
+\begin{figure}[h!]
+\centering
+    \textbf{}\par\medskip
+	\includegraphics[width= \linewidth]{uml.png}
+\end{figure}
 \subsection{Product functions}
 Considering all the goals previously presented, we can sum up into four categories the main functions of the product:
 \subsubsection{Acquisition of users' data}
@@ -211,43 +216,43 @@ actually there.
 	\item {[D14]} Data4Help is able to anonymize data based on the group request only if the group has more than 1000 users.
 	\item {[D15]} Companies know the SSN of the user. 
 	\item {[D16]} A company that can see the data of a single user or of a group of users must also be able to choose the option that allows it to see users' data as soon as they are produced.
-\end{itemize}
+\end{itemize}\newpage
 \section{Specific Requirements}
 \subsection{External interface requirements}
 \subsubsection{User interfaces}
 \begin{figure}[h!]
 \centering
-    \textbf{}\par\medskip
+    \textbf{Homepage.}\par\medskip
 	\includegraphics[width= \linewidth]{1homepage.png}
 \end{figure}
 \begin{figure}[h!]
 \centering
-    \textbf{}\par\medskip
+    \textbf{User sign up.}\par\medskip
 	\includegraphics[width= \linewidth]{2signupuser.png}
 \end{figure}\newpage
 \begin{figure}[h!]
 \centering
-    \textbf{}\par\medskip
+    \textbf{Company sing up.}\par\medskip
 	\includegraphics[width= \linewidth]{3signupcompany.png}
 \end{figure}
 \begin{figure}[h!]
 \centering
-    \textbf{}\par\medskip
+    \textbf{Company login.}\par\medskip
 	\includegraphics[width= \linewidth]{4logincompany.png}
 \end{figure}\newpage
 \begin{figure}[h!]
 \centering
-    \textbf{}\par\medskip
+    \textbf{Requests.}\par\medskip
 	\includegraphics[width= \linewidth]{5companyhompage.png}
 \end{figure}
 \begin{figure}[h!]
 \centering
-    \textbf{}\par\medskip
+    \textbf{Single user's data.}\par\medskip
 	\includegraphics[width= \linewidth]{6userprofile.png}
 \end{figure}\newpage
 \begin{figure}[h!]
 \centering
-    \textbf{}\par\medskip
+    \textbf{Group users' data.}\par\medskip
 	\includegraphics[width= \linewidth]{7groupprofile.png}
 \end{figure}\newpage
 \subsubsection{Hardware interfaces}
@@ -344,6 +349,11 @@ actually there.
 \end{itemize}\newpage
 \subsubsection{Use case diagram}
 
+\begin{figure}[h!]
+\centering
+    \textbf{}\par\medskip
+	\includegraphics[width= \linewidth]{usecase.png}
+\end{figure}
 \begin{center}
     \begin{tabular}{ | l | p{10cm} |}
     \hline
@@ -533,7 +543,7 @@ All the exceptions are handled notifying the issues to the user and taking back 
     Output Conditions & The request of being followed by a company is sent to the user. \\ \hline
     Exceptions & -    \\ \hline
     \end{tabular}
-\end{center}
+\end{center}\newpage
 
 \subsubsection{Sequence diagram}
 
