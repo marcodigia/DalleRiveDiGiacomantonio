@@ -269,8 +269,22 @@ actually there.
 	\item Ambulance Service
 \end{itemize}
 \subsubsection{Communication interfaces}
-This network-connected background app uses LTE to send and receive data.
+The network-connected background app uses LTE to send and receive data, while the website uses HTTP protocol.
 \subsection{Scenarios}
+\subsubsection{Scenario 1}
+Accenture wants to monitor the health status of its managers and decides to rely on Data4Help, thus signs up on Data4Help website.
+Accenture's manager decided to try Data4Help only on one manager, Paolo, before starting with all the others. Paolo already has an Apple Watch, he signs up on Data4Help website.
+In order to monitor Paolo's data, Accenture logs into the website and performs a request for data of a single user by inserting Paolo's SSN, that they know already.
+Data4Help sends Paolo an email, notifying him that Accenture wants to see his data.
+Paolo accepts Accenture's request by clicking on the corresponding link.
+Once that Paolo accepted, Data4Help redirects Accenture on Paolo's profile page, and shows his main personal data: age, city, weight, height, kilometers walked during the current week, calories burnt during the current week and his average heartbeat during the day.
+In the end Data4Help asks Accenture if is interested in being kept updated with Paolo's new data, Accenture answers yes.
+\subsubsection{Scenario 2}
+Allianz want to create a new insurance policy for people living in Milan, whose cost changes based on the lifestyle of the customer. In orded to make some statistical analisys Allianz relys on Data4Help.
+Allianz subsrcibes on Data4Help website and performs a request for a group of users, searching for all the users living in Milan with age between 25 and 65 years old.
+Data4Help performs the research and the outcome number is higher than 1000 users, thus data can be considered as anonymous and are shown to Allianz.
+\subsubsection{Scenario 3}
+San Raffaele hospital wants to create a new service in order to monitor its patients that previously had a stroke. They rely on AutomatedSOS. Each patient is given a smartwatch and is subscribed to Data4Help website. Happens that Elena, one of the patients involved in this new service, has a stroke. In 3.7 seconds the hospital receives her current position due to an ambulance request.
 \subsection{Functional requirements}
 \subsubsection{[G1] Visitor can become User after providing credentials.}
 \begin{itemize}
@@ -569,18 +583,37 @@ All the exceptions are handled notifying the issues to the user and taking back 
 	\includegraphics[width= \linewidth]{callambulance.png}
 \end{figure}\newpage
 \subsection{Performance requirements}
-\begin{itemize}
-	\item AutomatedSOS calls an ambulance to the current user's position within 5 seconds.
-\end{itemize}
+The system is provided to serve a great number of users simultaneously. AutomatedSOS calls an ambulance to the current user's position within 5 seconds. Users will rely on the application in order to be sure during their everyday activities that they will be safe in case of dangerous heart disfunction.
 \subsection{Design constraints}
 \subsubsection{Standard compliance}
+\begin{itemize}
+\item The app requires permission to access user current position.
+\item Personal data proccessing observs GDPR
+\item Users' data are stored in TrackMe's servers.
+\item Website access ig guaranteed to be safe by using HTTPS
+\end{itemize}
 \subsubsection{Hardware limitation}
+This background application does not impose strict hardware limitations, besides these following points:
+\begin{itemize}
+\item a wearable device with watchOS or wearOS
+\item GPS
+\item LTE
+\end{itemize}
 \subsubsection{Other constraints}
+\begin{itemize}
+\item Regulatory policies
+\item Usage is possible only for users with a Google or iOS account
+\item The smartwatch must be logged in a Google or iOS account
+\end{itemize}
 \subsection{Software system attributes}
 \subsubsection{Reliability}
+The application must be available 24/7. Since AutomatedSOS is built on top of Data4Help, no concession is tolerated.
 \subsubsection{Security}
+Companies' passwords should be stored and encrypted with high-security encryption. Security of the users' data is very important, they can't be accessed without permission, since these data are sensitive. Furthermore they're accessible read-only.
 \subsubsection{Maintainability}
+Code is structured in such a way that possible future modification and functionalities addition will be easy to implement, e.g. Track4Run, a service to track athletes participating in a run.
 \subsubsection{Compatibility}
+The website is compatible with every browser. The background app is compatible only with smartwatch running on Watch OS and Wear OS.
 \section{Formal Analysis Using Alloy}
 \subsection{Alloy model}
 \subsection{World generated}
