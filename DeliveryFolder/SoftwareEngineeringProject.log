@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.19)  9 NOV 2018 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.19)  9 NOV 2018 13:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -222,25 +222,25 @@ File: 7groupprofile.png Graphic file (type png)
 Package pdftex.def Info: 7groupprofile.png  used on input line 256.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
  [13 <./6userprofile.png> <./7groupprofile.png>]
-Overfull \hbox (14.19505pt too wide) in paragraph at lines 286--287
+Overfull \hbox (14.19505pt too wide) in paragraph at lines 287--288
 []\OT1/cmr/m/n/10 [R2] Each time that an ac-cept-ing or re-ject-ing no-ti-fi-ca
 -tion is sent to Data4Help,
  []
 
-[14]
-Overfull \hbox (3.445pt too wide) in paragraph at lines 313--314
+[14] [15]
+Overfull \hbox (3.445pt too wide) in paragraph at lines 314--315
 []\OT1/cmr/m/n/10 [R10] The sys-tem must al-low the com-pany to send a no-ti-fi
 -ca-tion to TrackMe
  []
 
-[15]
-Overfull \hbox (3.445pt too wide) in paragraph at lines 319--320
+
+Overfull \hbox (3.445pt too wide) in paragraph at lines 320--321
 []\OT1/cmr/m/n/10 [R10] The sys-tem must al-low the com-pany to send a no-ti-fi
 -ca-tion to TrackMe
  []
 
 [16]
-Overfull \hbox (3.445pt too wide) in paragraph at lines 347--348
+Overfull \hbox (3.445pt too wide) in paragraph at lines 348--349
 []\OT1/cmr/m/n/10 [R10] The sys-tem must al-low the com-pany to send a no-ti-fi
 -ca-tion to TrackMe
  []
@@ -249,59 +249,59 @@ Overfull \hbox (3.445pt too wide) in paragraph at lines 347--348
 <usecase.png, id=74, 1085.05376pt x 603.25375pt>
 File: usecase.png Graphic file (type png)
 <use usecase.png>
-Package pdftex.def Info: usecase.png  used on input line 355.
+Package pdftex.def Info: usecase.png  used on input line 356.
 (pdftex.def)             Requested size: 345.0pt x 191.81168pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 358.
+(Font)              <7> on input line 359.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 358.
+(Font)              <5> on input line 359.
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 358--382
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 359--383
  [] 
  []
 
 [18 <./usecase.png>]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 385--398
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 386--399
  [] 
  []
 
 [19]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 401--420
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 402--421
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 423--440
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 424--441
  [] 
  []
 
 [20]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 443--457
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 444--458
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 460--474
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 461--475
  [] 
  []
 
 [21]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 477--493
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 478--494
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 496--512
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 497--513
  [] 
  []
 
 [22]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 515--530
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 516--531
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 533--546
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 534--547
  [] 
  []
 
@@ -309,25 +309,25 @@ Overfull \hbox (46.36111pt too wide) in paragraph at lines 533--546
 <singlerequest.png, id=98, 750.805pt x 634.37pt>
 File: singlerequest.png Graphic file (type png)
 <use singlerequest.png>
-Package pdftex.def Info: singlerequest.png  used on input line 553.
+Package pdftex.def Info: singlerequest.png  used on input line 554.
 (pdftex.def)             Requested size: 345.0pt x 291.50398pt.
  [25 <./singlerequest.png>]
 <grouprequest.png, id=104, 749.80125pt x 808.01875pt>
 File: grouprequest.png Graphic file (type png)
 <use grouprequest.png>
-Package pdftex.def Info: grouprequest.png  used on input line 558.
+Package pdftex.def Info: grouprequest.png  used on input line 559.
 (pdftex.def)             Requested size: 345.0pt x 371.79178pt.
  [26 <./grouprequest.png>]
 <acceptreject.png, id=109, 704.6325pt x 764.8575pt>
 File: acceptreject.png Graphic file (type png)
 <use acceptreject.png>
-Package pdftex.def Info: acceptreject.png  used on input line 563.
+Package pdftex.def Info: acceptreject.png  used on input line 564.
 (pdftex.def)             Requested size: 345.0pt x 374.48001pt.
  [27 <./acceptreject.png>]
 <callambulance.png, id=114, 643.40375pt x 592.2125pt>
 File: callambulance.png Graphic file (type png)
 <use callambulance.png>
-Package pdftex.def Info: callambulance.png  used on input line 568.
+Package pdftex.def Info: callambulance.png  used on input line 569.
 (pdftex.def)             Requested size: 345.0pt x 317.55798pt.
  [28 <./callambulance.png>] [29] (./SoftwareEngineeringProject.aux) ) 
 Here is how much of TeX's memory you used:
@@ -345,7 +345,7 @@ texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SoftwareEngineeringProject.pdf (29 pages, 1650596 bytes).
+Output written on SoftwareEngineeringProject.pdf (29 pages, 1650860 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
