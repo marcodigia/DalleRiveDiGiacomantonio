@@ -26,7 +26,7 @@ Di Giacomantonio Marco - 846515 \\[4pt]
 \end{large}
 \end{flushright}
 \newpage
-\textbf{Table of Contents}
+{\Large\textbf{Table of Contents}}
 	\begin{enumerate}
 			\item Introduction
 			\begin{enumerate}
@@ -49,7 +49,10 @@ Di Giacomantonio Marco - 846515 \\[4pt]
 				\item Product perspective
 				\item Product functions
 				\begin{enumerate}
-					\item 
+					\item Acquisition of users' data
+					\item Company access to users' data
+					\item Forwarding of following requests directly to the users and data anonymization
+					\item AutomatedSOS
 				\end{enumerate}
 				\item User characteristics
 				\item Assumptions, dependencies and constraints
@@ -68,7 +71,9 @@ Di Giacomantonio Marco - 846515 \\[4pt]
 				\end{enumerate}
 				\item Scenarios
 				\begin{enumerate}
-					\item
+					\item Scenario 1
+					\item Scenario 2
+					\item Scenario 3
 				\end{enumerate}
 				\item Functional requirements
 				\begin{enumerate}
@@ -82,7 +87,6 @@ Di Giacomantonio Marco - 846515 \\[4pt]
 					\item Hardware limitation
 					\item Other constraint
 				\end{enumerate}
-				\newpage
 				\item Software system attributes
 				\begin{enumerate}
 					\item Reliability
@@ -98,6 +102,10 @@ Di Giacomantonio Marco - 846515 \\[4pt]
 				\item Alloy results
 			\end{enumerate}
 			\item Effort Spent
+			\begin{enumerate}
+			\item Dalle Rive Fabio
+			\item Di Giacomantonio Marco
+			\end{enumerate}
 			\item Resources
 	\end{enumerate}
 	\newpage
@@ -168,6 +176,7 @@ TrackMe also wants to develop a non-intrusive SOS service for elderly people, ca
 	\item [Effort Spent] shows the effort spent by each group member while working on this project.
 	\item [Resources] includes the reference documents. 
 \end{description}
+\newpage
 \section{Overall Description}
 \subsection{Product perspective}
 Data4Help and AutomatedSOS are intended as a background application that are installed inside a smart watch. The systems-to-be acquire data of the users through the smart watch. The user register himself for Data4Help on the website page that TrackMe provide for this application. Users access to the web page through their Google or Apple account. These accounts are used by TrackMe in order to understand from which devices it will acquire data.
@@ -182,7 +191,7 @@ Considering all the goals previously presented, we can sum up into four categori
 Data4Help runs on a smartwatch, assumed to be able to communicate the data directly to TrackMe's servers. It means that this product works only with smartwatch with an internet connection. Future updates will enable to use also smartwatch without internet connection to run Data4Help and AutomatedSOS.
 \subsubsection{Company access to users' data}
 Data4Help enables companies to access data of a specific user or of groups of users. Companies access to these data through the web page. Data are shown in a user-friendly way, generating automatically graphs. Some samples of the GUI will be shown in the corresponding section.
-\subsubsection{Forwarding of following requests directly to the users and data anoymization}
+\subsubsection{Forwarding of following requests directly to the users and data anonymization}
 Companies are able to send following requests, in order to access user data. Data4Help allows TrackMe to put in contact companies and users. Every time that a company request to access some data, Data4Help notfies TrackMe's servers. Analizing the request, TrackMe's servers will decide how to proceed:\\
 \begin{itemize}
 \item If the request concerns a specific user, TrackMe sends an email to the user asking to accept or reject it
@@ -639,11 +648,44 @@ Companies' passwords should be stored and encrypted with high-security encryptio
 Code is structured in such a way that possible future modification and functionalities addition will be easy to implement, e.g. Track4Run, a service to track athletes participating in a run.
 \subsubsection{Compatibility}
 The website is compatible with every browser. The background app is compatible only with smartwatch running on Watch OS and Wear OS.
+\newpage
 \section{Formal Analysis Using Alloy}
 \subsection{Alloy model}
 \subsection{World generated}
 \subsection{Alloy results}
+\newpage
 \section{Effort Spent}
+\subsection{Dalle Rive Fabio}
+\begin{center}
+    \begin{tabular}{ | l | r |}
+    \hline
+    \textbf{Task Description} & \textbf{Hours} \\ \hline
+    Purpose, Scope & 2\\ \hline
+   	Product Perspective, Product Functions & 2\\ \hline
+    User Characteristics, Domain Assumptions & 4\\ \hline
+    External Interfaces Requirements & 5\\ \hline
+    Scenarios & 1\\ \hline
+    Functional Requirements & 10\\ \hline
+    Performance Requirements, Design Constraints, Software System Requirements & 1\\ \hline
+    Formal Analysis Using Alloy & 8\\ \hline
+    \end{tabular}
+\end{center}
+\subsection{Di Giacomantonio Marco}
+\begin{center}
+    \begin{tabular}{ | l | r |}
+    \hline
+    \textbf{Task Description} & \textbf{Hours} \\ \hline
+    Purpose, Scope & 2\\ \hline
+   	Product Perspective, Product Functions & 2\\ \hline
+    User Characteristics, Domain Assumptions & 4\\ \hline
+    External Interfaces Requirements & 5\\ \hline
+    Scenarios & 1\\ \hline
+    Functional Requirements & 10\\ \hline
+    Performance Requirements, Design Constraints, Software System Requirements & 1\\ \hline
+    Formal Analysis Using Alloy & 8\\ \hline
+    \end{tabular}
+\end{center}
+\newpage
 \section{Resources}
 \end{document}
 
