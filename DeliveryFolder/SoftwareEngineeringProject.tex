@@ -650,8 +650,136 @@ The website is compatible with every browser. The background app is compatible o
 \newpage
 \section{Formal Analysis Using Alloy}
 \subsection{Alloy model}
+open util/integer \\ 
+open util/boolean \\
+\\
+ sig User \{  \\
+ age: one Int, \\ 
+ height: one Int, \\ 
+ weight: one Int, \\
+ ssn: one String, \\ 
+ residence: one Int, --This is the user's CAP \\ 
+ datas: Data, \\
+ requests: set Request,  \\
+ \}   \{ \\
+ age $\geq$ 0 and \\ 
+ height $\geq$ 0 and  \\ 
+ weight $\geq$ 0 \\ 
+ \} \\
+ \\
+sig Group \{\\
+users: set User\\
+\} \{ \\users $\geq$ 1001\\ \}\\
+\\
+sig Data \{\\
+heartrate: one Int,\\
+calories: one Int,\\
+km: one Int,\\
+locations: Location\\
+\} \{\\
+heartrate $\geq$ 0 and\\
+calories $\geq$ 0 and\\
+km $\geq$ 0\\
+\}\\
+\\
+sig Location\{\\
+cordX: one Int,\\
+cordY: one Int\\
+\} \{\\
+cordX $\geq$ 0 and\\
+cordY $\geq$ 0\\
+\}\\
+\\
+sig Company\{\\
+vat: one String,\\
+name: one String,\\
+password: one String,\\
+requests: set Request \\
+\}\\
+\\
+abstract sig Request\{\\
+vatCompany: one String,\\
+approve: one Bool\\
+\}\\
+\\
+sig SingleUserRequest extends Request\{\\
+ssn: one String\\
+\}\\
+\\
+sig GroupUserRequest extends Request\{\\
+groupname: one String,\\
+filterbyresidence: one Int,\\
+filterbyagelower: one Int,\\
+filterbyagehigher: one Int,\\
+filterbyheightlower: one Int,\\
+filterbyheighthigher: one Int,\\
+filterbyweightlower: one Int,\\
+filterbyweighthigher: one Int\\
+\}\{\\
+filterbyresidence $\geq$ 0 and\\
+filterbyagelower $\geq$ 0 and\\
+filterbyagehigher $\geq$ 0 and\\
+filterbyheightlower $\geq$ 0 and\\
+filterbyheighthigher $\geq$ 0 and\\
+filterbyweightlower $\geq$ 0 and\\
+filterbyweighthigher $\geq$ 0 and\\
+(filterbyagelower $\geq$ filterbyagehigher) and\\
+(filterbyheightlower $\geq$ filterbyheighthigher) and\\
+(filterbyweightlower $\geq$ filterbyweighthigher)\\
+\}\\
+\\
+-- a signle request cannot exists on its own, or belong to more than one company\\
+\\
+fact SingleRequestCompanyconnection \{\\
+all r:SingleUserRequest \textbar \space all c:Company \textbar \space (r in c.requests implies r.vatCompany = c.vat) and (r.vatCompany = c.vat implies r in c.requests)\\
+\}\\
+\\
+fact SingleRequestUserconnection \{\\
+all r:SingleUserRequest \textbar \space all u:User \textbar \space (r in u.requests implies u.ssn = r.ssn) and (r.ssn = u.ssn implies r in u.requests)\\
+\}\\
+\\
+-- a group request cannot exists on its own, or belong to more than one company\\
+\\
+fact GroupRequestCompanyconnection \{\\
+all r:GroupUserRequest \textbar \space all c:Company \textbar \space (r in c.requests implies r.vatCompany = c.vat) and (r.vatCompany = c.vat implies r in c.requests)\\
+\}\\
+\\
+fact GroupRequestUserconnection \{\\
+all g:GroupUserRequest \textbar \space all u:User \textbar \space (((g.filterbyagelower $\leq$ u.age and u.age $\leq$ g.filterbyagehigher) and\\ (g.filterbyheightlower $\leq$ u.height and u.height $\leq$ g.filterbyheighthigher) and\\ (g.filterbyweightlower $\leq$ u.weight and u.weight $\leq$ g.filterbyweighthigher) and\\ (g.filterbyresidence=u.residence))implies(g in u.requests))\\
+\}\\
+\\
+-- vat is unique\\
+\\
+fact vatUnique\{\\
+no disjoint c1,c2 : Company \textbar \space c1.vat = c2.vat\\
+\}\\
+\\
+-- ssn is unique\\
+\\
+fact ssnUnique\{\\
+no disjoint u1,u2 : User \textbar \space u1.ssn = u2.ssn\\
+\}\\
+\\
+pred show ()\{\\
+(some u:User \textbar \space u.requests $\geq$ 2 and u.ssn = "1234") and\\
+(some u:User \textbar \space u.requests $\geq$ 2 and u.ssn = "5678") and\\
+(some c:Company \textbar \space c.requests $\geq$ 1 and c.vat ="5043670") and \\
+(one s:SingleUserRequest \textbar \space s.ssn = "1234" and s.vatCompany = "5043670") and\\
+(one s:SingleUserRequest \textbar \space s.ssn = "5678" and s.vatCompany = "5043670") and\\
+(one g:GroupUserRequest \textbar \space g.vatCompany = "4563729" and g.groupname = "nordMilano")\\
+\}\\
+run show\\
+\newpage
 \subsection{World generated}
+\begin{figure}[h!]
+	\includegraphics[width= \linewidth]{world1.png}
+	\includegraphics[width= \linewidth]{world2.png}
+\end{figure}
+\newpage
 \subsection{Alloy results}
+As we can see the model was able to find a world that satisfies all the facts. \\
+The main point we wanted to highlight was the fact that our requests must be issued by a company and must be related to some user. \\
+With our Alloy model we did that.
 \newpage
 \section{Effort Spent}
 \subsection{Dalle Rive Fabio}
