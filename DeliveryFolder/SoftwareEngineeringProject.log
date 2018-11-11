@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  11 NOV 2018 10:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  11 NOV 2018 11:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -242,8 +242,8 @@ Overfull \hbox (3.445pt too wide) in paragraph at lines 374--375
 -ca-tion to TrackMe
  []
 
-[18] [19]
-<usecase.png, id=81, 1085.05376pt x 603.25375pt>
+[18]
+<usecase.png, id=77, 1085.05376pt x 603.25375pt>
 File: usecase.png Graphic file (type png)
 <use usecase.png>
 Package pdftex.def Info: usecase.png  used on input line 387.
@@ -257,91 +257,91 @@ Overfull \hbox (46.36111pt too wide) in paragraph at lines 390--414
  [] 
  []
 
-[20 <./usecase.png>]
+[19 <./usecase.png>]
 Overfull \hbox (46.36111pt too wide) in paragraph at lines 417--430
  [] 
  []
 
-[21]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 433--452
+[20]
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 432--451
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 455--472
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 454--471
+ [] 
+ []
+
+[21]
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 474--488
+ [] 
+ []
+
+
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 491--505
  [] 
  []
 
 [22]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 475--489
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 508--524
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 492--506
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 527--543
  [] 
  []
 
 [23]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 509--525
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 546--561
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 528--544
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 564--577
  [] 
  []
 
 [24]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 547--562
- [] 
- []
-
-
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 565--578
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 581--594
  [] 
  []
 
 [25]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 582--595
- [] 
- []
-
-[26]
-<singlerequest.png, id=105, 750.805pt x 634.37pt>
+<singlerequest.png, id=102, 750.805pt x 634.37pt>
 File: singlerequest.png Graphic file (type png)
 <use singlerequest.png>
-Package pdftex.def Info: singlerequest.png  used on input line 602.
+Package pdftex.def Info: singlerequest.png  used on input line 601.
 (pdftex.def)             Requested size: 345.0pt x 291.50398pt.
- [27 <./singlerequest.png>]
-<grouprequest.png, id=110, 749.80125pt x 808.01875pt>
+ [26 <./singlerequest.png>]
+<grouprequest.png, id=107, 749.80125pt x 808.01875pt>
 File: grouprequest.png Graphic file (type png)
 <use grouprequest.png>
-Package pdftex.def Info: grouprequest.png  used on input line 607.
+Package pdftex.def Info: grouprequest.png  used on input line 606.
 (pdftex.def)             Requested size: 345.0pt x 371.79178pt.
- [28 <./grouprequest.png>]
-<acceptreject.png, id=115, 704.6325pt x 764.8575pt>
+ [27 <./grouprequest.png>]
+<acceptreject.png, id=112, 704.6325pt x 764.8575pt>
 File: acceptreject.png Graphic file (type png)
 <use acceptreject.png>
-Package pdftex.def Info: acceptreject.png  used on input line 612.
+Package pdftex.def Info: acceptreject.png  used on input line 611.
 (pdftex.def)             Requested size: 345.0pt x 374.48001pt.
- [29 <./acceptreject.png>]
-<callambulance.png, id=120, 643.40375pt x 592.2125pt>
+ [28 <./acceptreject.png>]
+<callambulance.png, id=117, 643.40375pt x 592.2125pt>
 File: callambulance.png Graphic file (type png)
 <use callambulance.png>
-Package pdftex.def Info: callambulance.png  used on input line 617.
+Package pdftex.def Info: callambulance.png  used on input line 616.
 (pdftex.def)             Requested size: 345.0pt x 317.55798pt.
- [30 <./callambulance.png>] [31] [32] [33]
-Overfull \hbox (57.6893pt too wide) in paragraph at lines 660--672
+ [29 <./callambulance.png>] [30] [31] [32]
+Overfull \hbox (57.6893pt too wide) in paragraph at lines 659--671
  [] 
  []
 
 
-Overfull \hbox (57.6893pt too wide) in paragraph at lines 675--687
+Overfull \hbox (57.6893pt too wide) in paragraph at lines 674--686
  [] 
  []
 
-[34] [35] (./SoftwareEngineeringProject.aux) ) 
+[33] [34] (./SoftwareEngineeringProject.aux) ) 
 Here is how much of TeX's memory you used:
  1506 strings out of 492649
  22400 string characters out of 6129622
@@ -357,10 +357,10 @@ t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist
 onts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SoftwareEngineeringProject.pdf (35 pages, 1658373 bytes).
+Output written on SoftwareEngineeringProject.pdf (34 pages, 1659024 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
+ 159 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
