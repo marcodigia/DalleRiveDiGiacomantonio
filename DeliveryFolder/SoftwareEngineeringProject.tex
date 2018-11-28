@@ -107,6 +107,7 @@ Di Giacomantonio Marco - 846515 \\[4pt]
 			\item Di Giacomantonio Marco
 			\end{enumerate}
 			\item Resources
+			\item Revision History
 	\end{enumerate}
 	\newpage
 \section{Introduction}
@@ -183,7 +184,7 @@ Data4Help and AutomatedSOS are intended as a background application that are ins
 \begin{figure}[h!]
 \centering
     \textbf{}\par\medskip
-	\includegraphics[width= \linewidth]{uml.png}
+	\includegraphics[width= \linewidth]{model.png}
 \end{figure}
 \subsection{Product functions}
 Considering all the goals previously presented, we can sum up into four categories the main functions of the product:
@@ -642,11 +643,14 @@ This background application does not impose strict hardware limitations, besides
 \subsubsection{Reliability}
 The application must be available 24/7. Since AutomatedSOS is built on top of Data4Help, no concession is tolerated.
 \subsubsection{Security}
-Companies' passwords should be stored and encrypted with high-security encryption. Security of the users' data is very important, they can't be accessed without permission, since these data are sensitive. Furthermore they're accessible read-only.
+Companies' passwords should be stored and encrypted with high-security encryption. \\
+Security of the users' data is very important, they can't be accessed without permission, since these data are sensitive. \\
+Furthermore they're accessible read-only.
 \subsubsection{Maintainability}
 Code is structured in such a way that possible future modification and functionalities addition will be easy to implement, e.g. Track4Run, a service to track athletes participating in a run.
 \subsubsection{Compatibility}
-The website is compatible with every browser. The background app is compatible only with smartwatch running on Watch OS and Wear OS.
+The website is compatible with every browser. \\
+The background app is compatible only with smartwatch running on Watch OS and Wear OS.
 \newpage
 \section{Formal Analysis Using Alloy}
 \subsection{Alloy model}
@@ -828,6 +832,11 @@ With our Alloy model we did that.
 \item Specification document “Mandatory Project Assignment AY 2018-2019"
 \item Alloy documentation - http://alloy.mit.edu/alloy/documentation.html
 \item Software Engineering 2 Course Slides
+\end{itemize}
+\newpage
+\section{ History}
+\begin{itemize}
+\item 1.1: Edit UML in section 2.1
 \end{itemize}
 \end{document}
 
