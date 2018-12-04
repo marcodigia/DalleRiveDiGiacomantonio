@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  4 DEC 2018 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  4 DEC 2018 18:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -193,27 +193,25 @@ File: callambulance.png Graphic file (type png)
 <use callambulance.png>
 Package pdftex.def Info: callambulance.png  used on input line 196.
 (pdftex.def)             Requested size: 345.0pt x 124.96617pt.
-<grouprequest.png, id=51, 683.55376pt x 471.7625pt>
+ [10 <./callambulance.png>]
+<grouprequest.png, id=55, 683.55376pt x 471.7625pt>
 File: grouprequest.png Graphic file (type png)
 <use grouprequest.png>
-Package pdftex.def Info: grouprequest.png  used on input line 201.
+Package pdftex.def Info: grouprequest.png  used on input line 204.
 (pdftex.def)             Requested size: 345.0pt x 238.1122pt.
-<singlerequest.png, id=52, 1124.2pt x 471.7625pt>
+ [11 <./grouprequest.png>]
+<singlerequest.png, id=60, 1124.2pt x 471.7625pt>
 File: singlerequest.png Graphic file (type png)
 <use singlerequest.png>
-Package pdftex.def Info: singlerequest.png  used on input line 206.
+Package pdftex.def Info: singlerequest.png  used on input line 212.
 (pdftex.def)             Requested size: 345.0pt x 144.77637pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[10 <./callambulance.png> <./grouprequest.png>]
-<inter.png, id=58, 788.9475pt x 536.0025pt>
+ [12 <./singlerequest.png>]
+<inter.png, id=65, 788.9475pt x 536.0025pt>
 File: inter.png Graphic file (type png)
 <use inter.png>
-Package pdftex.def Info: inter.png  used on input line 214.
+Package pdftex.def Info: inter.png  used on input line 221.
 (pdftex.def)             Requested size: 345.0pt x 234.38602pt.
- [11 <./singlerequest.png> <./inter.png>] [12] [13] [14] [15] (./DD.aux) ) 
+ [13 <./inter.png>] [14] [15] [16] [17] [18] (./DD.aux) ) 
 Here is how much of TeX's memory you used:
  1486 strings out of 492649
  21648 string characters out of 6129622
@@ -221,18 +219,18 @@ Here is how much of TeX's memory you used:
  5372 multiletter control sequences out of 15000+600000
  5504 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,25p,522b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on DD.pdf (15 pages, 690967 bytes).
+ 41i,14n,25p,605b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on DD.pdf (18 pages, 714809 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

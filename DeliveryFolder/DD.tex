@@ -195,16 +195,23 @@ The diagram shows the architecture of the system-to-be. Data4Help requires the d
     \textbf{}\par\medskip
 	\includegraphics[width= \linewidth]{callambulance.png}
 \end{figure}
+In this diagram a user, registered to AutomatedSOS, sends with his smartwatch his biomedical parameters and his current location to the System-To-Be. Since the user is already registerd to AutomatedSOS there is no necessity to ask for his data, but can access them directly.\newline
+Everytime that AutomatedSOS recevies new data it checks if they are below a threshold. If so creates an instance of a CallAmbulance class that is responsible for contacting the AmbulanceService and sending the user location.
+\newpage
 \begin{figure}[h!]
 \centering
     \textbf{}\par\medskip
 	\includegraphics[width= \linewidth]{grouprequest.png}
 \end{figure}
+In this diagram a company creates a group user request, to identify the group they can use various filters (e.g. age, ZIP Code, etc.). The Group User Request is stored in the DB. The system searches for the users corresponding to the filters by querying the DB.\newline
+The outcome depends on the number of users found: if there are more than 1000 the outcome is positive, a group is created and the company is notified; otherwise the system is notified that a group doesn't exist and also the company is notified.
+\newpage
 \begin{figure}[h!]
 \centering
     \textbf{}\par\medskip
 	\includegraphics[width= \linewidth]{singlerequest.png}
 \end{figure}
+In this diagram a company creates a single user request by using a SSN.  The single user request is stored in the DB as dandling request and the user is marked as a Pendent User. The request is sent to the user by email, he can choose whether accepting it or not by clicking the corresponing link in the email. The link redirects the user into a webpage that interacts with the Managing Request Service. The user's answer is stored in the DB, he is marked as not pendent anymore and the request is marked as not dandling as well. In the end the system and the company are notified of the outcome.
 \newpage
 \subsection{Component Interfaces}
 This diagram shows the interaction between different component interfaces, this information was already present in the class diagram, but here it is shown more clearly.
@@ -224,6 +231,67 @@ This diagram shows the interaction between different component interfaces, this 
 \section{User Interfaces Design}
 The mock-ups for this application have already been presented in the RASD Document.
 \section{Requirements Traceability}
+Here is presented the mapping between the RASD goals and software components:
+\begin{itemize}
+	\item {[G1]} Visitor can become User after providing credentials. (Requirement \textbf{[R1]})
+	\begin{itemize}
+	\item RegistrationServiceImpl
+	\end{itemize}
+	\item {[G2]} User can accept or reject the request of access to his data formulated by companies. (Requirements \textbf{[R2] - [R3]})
+	\begin{itemize}
+	\item ManagingRequestServiceImpl
+	\item EmailServiceImpl
+	\end{itemize}
+	\item {[G3]} If user's parameters are below specified thresholds, an ambulance is called within 5 seconds. (Requirement \textbf{[R4]}) 
+	\begin{itemize}
+	\item CallAmbulaceServiceImpl
+	\item ViewSingleUserDataServiceImpl
+	\end{itemize}
+	\item {[G4]} Company can sign up as Company to Data4Help and AutomatedSOS. (Requirement \textbf{[R5] - [R6]})
+	\begin{itemize}
+	\item RegistrationServiceImpl
+	\end{itemize}
+	\item {[G5]} Company can be recognized providing a password and vat number. (Requirement \textbf{[R7]})
+	\begin{itemize}
+	\item LoginServiceImpl
+	\end{itemize}
+	\item {[G6]} Company can formulate a request to see anonymized data of a group of users. (Requirement \textbf{[R8]-[R9]-[R10]})
+	\begin{itemize}
+	\item GroupRequestServiceImpl
+	\end{itemize}
+	\item {[G7]} Company can formulate a request to see data of a specific user providing his SSN. (Requirement \textbf{[R10]-[R11]-[R12]})
+	\begin{itemize}
+	\item SingleUserRequestServiceImpl
+	\end{itemize}
+	\item {[G8]} Company can see anonymized data of a group of users. (Requirement \textbf{[R13]})
+	\begin{itemize}
+	\item ViewGroupDataServiceImpl
+	\item AnonymizeGroupDataServiceImpl
+	\end{itemize}
+	\item {[G9]} Company can see data of a specific user providing his SSN. (Requirement \textbf{[R18]})
+	\begin{itemize}
+	\item ViewSingleUserDataServiceImpl
+	\end{itemize}
+	\item {[G10]} Company can subscribe to users' new data. (Requirement \textbf{[R14]})
+	\begin{itemize}
+	\item ViewSingleUserDataServiceImpl	
+	\item ViewGroupDataServiceImpl
+	\item AnonymizeGroupDataServiceImpl
+	\end{itemize}
+	\item {[G11]} Data4Help can anonymise data. (Requirement \textbf{[R15]})
+	\begin{itemize}
+	\item AnonymizeGroupDataServiceImpl
+	\end{itemize}
+	\item {[G12]} Data4Help can forward companies' requests to users. (Requirement \textbf{[R10]-[R16]})
+	\begin{itemize}
+	\item SingleUserRequestServiceImpl
+	\item EmailServiceImpl
+	\end{itemize}
+	\item {[G13]} A user of Data4Help becomes a user of AutomateSOS if he is older than \emph{Age} (Requirement \textbf{[R17]})
+	\begin{itemize}
+	\item RegistrationServiceImpl
+	\end{itemize}
+\end{itemize}
 \newpage
 \section{Implementation, Integration and Test Plan}
 \newpage
