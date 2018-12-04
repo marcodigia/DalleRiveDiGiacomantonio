@@ -38,7 +38,6 @@ Di Giacomantonio Marco - 846515 \\[4pt]
 					\item Acronyms
 					\item Abbreviations
 				\end{enumerate}
-				\item Reference Documents
 				\item Document structure
 			\end{enumerate}
 			\item Architectural Design
@@ -65,13 +64,55 @@ Di Giacomantonio Marco - 846515 \\[4pt]
 	\newpage
 \section{Introduction}
 \subsection{Purpose}
+The purpose of this document is to give more technical details than the RASD about TrackMe system.
+It provides an overall guidance to the architecture of the software product and therefore it is primarily addressed to the software development.
 \subsection{Scope}
+The project Data4Help aims to build a system that allows third parties to monitor the position and health status of users. All the data are collected by TrackMe, the company that wants to develop Data4Help, and are shared with other companies which are interested in those data. Furthermore, TrackMe wants to develop AutomatedSOS, a system build on top of Data4Help, designed for elderly people. It is able to intervene by calling an ambulance if the health parameters of the user are below some fixed thresholds.
+The main target group of the application are the companies intrested in users' data.
+After registration, these companies can request:
+\begin{itemize}
+\item Access to the data of some specific user.
+\item Access to anonymized data of groups of users.
+\end{itemize}
+Another terget group are elderly people, to whom is addessed AutomatedSOS, a non-intrusive SOS service. It is build on top of Data4Help. This service is designed to monitor health status of users and to send an ambulance to the location of the user if some parameters are below some specified thresholds.
 \subsection{Definitions, Acronyms, Abbreviations}
 \subsubsection{Definitions}
+...
 \subsubsection{Acronyms}
+\begin{itemize}
+\item API: Application Programming Interface
+\item DB: Database
+\item DBMS: Database Management System 
+\item DD: Design Document
+\item GPS: Global Positioning System
+\item GUI: Graphical User Interface
+\item MVC: Model View Controller
+\item RASD: Requirements Analysis and Specifications Document
+\item UI: User Interface
+\item SSN: Social Security Number
+\end{itemize}
 \subsubsection{Abbreviations}
-\subsection{Reference Documents}
+\begin{itemize}
+\item {[Gn]: n-th goal}
+\item {[Rn]: n-th functional requirement}
+\end{itemize}
 \subsection{Document structure}
+\begin{itemize}
+ \item Introduction: this section introduces the design document. It explains the utility of the project, text conventions and the framework of the document.
+\item Architecture Design: this section illustrates the main components of the system and the relationships between them, providing information about their operating principles and deployment. This section will also focus on the main architectural styles and patterns adopted in the design of the system.\newline
+This section is divided into different parts:\newline
+\textit{1. Overview}: this sections explains the tiers division of our application;\newline
+\textit{2. High level architecture}: this sections gives a high-level view of the components of the application and how they communicate;\newline
+\textit{3. Component view}: this sections gives a more detailed view of the components of the applications;\newline
+\textit{4. Deploying view}: this section shows the components that must be deployed;\newline
+\textit{5. Runtime view}: sequence diagrams are represented in this section to show how our application deals with different tasks;\newline
+\textit{6. Component interfaces}: the interfaces between the components are presented in this section;\newline
+\textit{7. Selected architectural styles and patterns}: this section explains the architectural choices taken during the creation of the application and the design pattern used;\newline
+\textit{8. Other design decisions}.
+\item User Interface Design: this section presents mockups about the User Interface.
+\item Requirements Traceability: this section aims to explain how the decisions taken in the RASD are linked to design elements.
+\item Implementation, Integration and test plan: identifies the order in which it is planned to implement the subcomponents of the system and the order in which it is planned to integrate such subcomponents and test the integration.
+\end{itemize}
 \newpage
 \section{Architectural Design}
 \subsection{Overview}
@@ -111,12 +152,11 @@ The main component is the application server and it consists of the following pa
 \begin{itemize}
 \item Login Service: responsible for authentication of the companies;
 \item Registration Service: responsible for registration of companies and of single users by using their Apple or Google credentials;
-\item Single User Request Service: enables companies to formulate a request in order to access data of a single user;
-\item Group Request Service: enables companies to formulate a request in orded to access data of a group of users with some specific traits;
+\item Single User Request Service: enables companies to formulate a request based on the user SSN in order to access data of a single user;
+\item Group Request Service: enables companies to formulate a request in order to access data of a group of users with some specific traits. Furthermore it is responsible for showing an answer to the company request, positive or negative;
 \item Email Service: external service used to forward companies request to single users and to let them answer these requests;
 \item Managing Request Service: enables single user to accept or decline a request by clicking on the corresponding link received in the single user request email that redirects him to our website;
 \item Call Ambulance Service: responsible for calling an ambulace if users data are below a certain value;
-\item Monitor User Data Service: responsible for receiving users data from the user;
 \item View Single User Data Service: shows data of a single user to a company;
 \item Anonymize Group Data Service: responsible for anonymizing data of a group of users;
 \item View Group Data Service: shows data of a group of users to a company;
@@ -151,7 +191,6 @@ The diagram shows the architecture of the system-to-be. Data4Help requires the d
 \item \textbf{DB Server}: it will store all the users' data such as heart rate, current position etc., as well as all the companies requests both for groups and single users;
 \item \textbf{Email Server}: provides the email service used both by the Application server to forward the companies requests and by users to accept them.
 \end{itemize}
-\newpage
 \subsection{Runtime View}
 \newpage
 \subsection{Component Interfaces}
@@ -171,7 +210,6 @@ This diagram shows the interaction between different component interfaces, this 
 \newpage
 \section{User Interfaces Design}
 The mock-ups for this application have already been presented in the RASD Document.
-\newpage
 \section{Requirements Traceability}
 \newpage
 \section{Implementation, Integration and Test Plan}

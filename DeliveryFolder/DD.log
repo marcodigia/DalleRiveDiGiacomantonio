@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  4 DEC 2018 14:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  4 DEC 2018 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -140,79 +140,79 @@ Package pdftex.def Info: PolimiLogo.png  used on input line 12.
 
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- <./PolimiLogo.png>] [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 80.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+ <./PolimiLogo.png>] [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 74.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 80.
-<highlevel.png, id=18, 144.7809pt x 85.7604pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
+[3] [4] [5]
+<highlevel.png, id=26, 144.7809pt x 85.7604pt>
 File: highlevel.png Graphic file (type png)
 <use highlevel.png>
-Package pdftex.def Info: highlevel.png  used on input line 89.
+Package pdftex.def Info: highlevel.png  used on input line 130.
 (pdftex.def)             Requested size: 345.0pt x 204.40144pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 93.
+               Default added (so using `tbp') on input line 134.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 94.
+(Font)              <7> on input line 135.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 94.
-[4 <./highlevel.png>]
-<comp.png, id=25, 1858.945pt x 709.65125pt>
+(Font)              <5> on input line 135.
+[6 <./highlevel.png>]
+<comp.png, id=32, 1858.945pt x 709.65125pt>
 File: comp.png Graphic file (type png)
 <use comp.png>
-Package pdftex.def Info: comp.png  used on input line 107.
+Package pdftex.def Info: comp.png  used on input line 148.
 (pdftex.def)             Requested size: 345.0pt x 131.6949pt.
- [5 <./comp.png>]
-<model.png, id=30, 1112.155pt x 620.3175pt>
+ [7 <./comp.png>]
+<model.png, id=38, 1112.155pt x 620.3175pt>
 File: model.png Graphic file (type png)
 <use model.png>
-Package pdftex.def Info: model.png  used on input line 129.
+Package pdftex.def Info: model.png  used on input line 169.
 (pdftex.def)             Requested size: 345.0pt x 192.42896pt.
- [6 <./model.png>]
-<UMLbig.png, id=35, 1945.2675pt x 1371.1225pt>
+ [8 <./model.png>]
+<UMLbig.png, id=43, 1925.1925pt x 1346.02875pt>
 File: UMLbig.png Graphic file (type png)
 <use UMLbig.png>
-Package pdftex.def Info: UMLbig.png  used on input line 136.
-(pdftex.def)             Requested size: 345.0pt x 243.17195pt.
- [7 <./UMLbig.png>]
-<depl.png, id=41, 1147.28625pt x 804.00375pt>
+Package pdftex.def Info: UMLbig.png  used on input line 176.
+(pdftex.def)             Requested size: 345.0pt x 241.20671pt.
+ [9 <./UMLbig.png>]
+<depl.png, id=48, 1147.28625pt x 804.00375pt>
 File: depl.png Graphic file (type png)
 <use depl.png>
-Package pdftex.def Info: depl.png  used on input line 143.
+Package pdftex.def Info: depl.png  used on input line 183.
 (pdftex.def)             Requested size: 345.0pt x 241.76732pt.
 
-[8 <./depl.png>] [9] [10]
-<inter.png, id=52, 768.8725pt x 721.69624pt>
+[10 <./depl.png>] [11]
+<inter.png, id=56, 788.9475pt x 536.0025pt>
 File: inter.png Graphic file (type png)
 <use inter.png>
-Package pdftex.def Info: inter.png  used on input line 162.
-(pdftex.def)             Requested size: 345.0pt x 323.83528pt.
- [11 <./inter.png>] [12] [13] [14] [15] [16] [17]
-(./DD.aux) ) 
+Package pdftex.def Info: inter.png  used on input line 201.
+(pdftex.def)             Requested size: 345.0pt x 234.38602pt.
+ [12 <./inter.png>] [13] [14] [15] [16] [17] (./DD.aux) ) 
 Here is how much of TeX's memory you used:
- 1469 strings out of 492649
- 21320 string characters out of 6129622
+ 1471 strings out of 492649
+ 21341 string characters out of 6129622
  85249 words of memory out of 5000000
- 5359 multiletter control sequences out of 15000+600000
- 5158 words of font info for 19 fonts, out of 8000000 for 9000
+ 5360 multiletter control sequences out of 15000+600000
+ 5504 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,25p,464b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb>
-Output written on DD.pdf (17 pages, 1317909 bytes).
+ 41i,14n,25p,522b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on DD.pdf (17 pages, 624289 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
