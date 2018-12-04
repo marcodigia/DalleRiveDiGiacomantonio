@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  3 DEC 2018 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  4 DEC 2018 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -307,29 +307,40 @@ Overfull \hbox (46.36111pt too wide) in paragraph at lines 582--595
  []
 
 [25]
-<singlerequest.png, id=102, 750.805pt x 634.37pt>
+<singlerequest.png, id=102, 1124.2pt x 471.7625pt>
 File: singlerequest.png Graphic file (type png)
 <use singlerequest.png>
 Package pdftex.def Info: singlerequest.png  used on input line 602.
-(pdftex.def)             Requested size: 345.0pt x 291.50398pt.
+(pdftex.def)             Requested size: 345.0pt x 144.77637pt.
  [26 <./singlerequest.png>]
-<grouprequest.png, id=107, 749.80125pt x 808.01875pt>
+<grouprequest.png, id=107, 683.55376pt x 471.7625pt>
 File: grouprequest.png Graphic file (type png)
 <use grouprequest.png>
 Package pdftex.def Info: grouprequest.png  used on input line 607.
-(pdftex.def)             Requested size: 345.0pt x 371.79178pt.
+(pdftex.def)             Requested size: 345.0pt x 238.1122pt.
  [27 <./grouprequest.png>]
-<acceptreject.png, id=112, 704.6325pt x 764.8575pt>
-File: acceptreject.png Graphic file (type png)
-<use acceptreject.png>
-Package pdftex.def Info: acceptreject.png  used on input line 612.
-(pdftex.def)             Requested size: 345.0pt x 374.48001pt.
- [28 <./acceptreject.png>]
-<callambulance.png, id=117, 643.40375pt x 592.2125pt>
+
+LaTeX Warning: File `acceptreject.png' not found on input line 612.
+
+
+! Package pdftex.def Error: File `acceptreject.png' not found: using draft sett
+ing.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.612 ...hics[width= \linewidth]{acceptreject.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[28]
+<callambulance.png, id=116, 834.11626pt x 302.12875pt>
 File: callambulance.png Graphic file (type png)
 <use callambulance.png>
 Package pdftex.def Info: callambulance.png  used on input line 617.
-(pdftex.def)             Requested size: 345.0pt x 317.55798pt.
+(pdftex.def)             Requested size: 345.0pt x 124.96617pt.
  [29 <./callambulance.png>] [30] [31]
 Underfull \hbox (badness 10000) in paragraph at lines 657--776
 
@@ -431,12 +442,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 657--776
  []
 
 [32] [33] [34]
-<world1.png, id=138, 1454.43375pt x 416.55624pt>
+<world1.png, id=137, 1454.43375pt x 416.55624pt>
 File: world1.png Graphic file (type png)
 <use world1.png>
 Package pdftex.def Info: world1.png  used on input line 779.
 (pdftex.def)             Requested size: 345.0pt x 98.806pt.
-<world2.png, id=139, 1411.2725pt x 428.60126pt>
+<world2.png, id=138, 1411.2725pt x 428.60126pt>
 File: world2.png Graphic file (type png)
 <use world2.png>
 Package pdftex.def Info: world2.png  used on input line 780.
@@ -453,11 +464,11 @@ Overfull \hbox (57.6893pt too wide) in paragraph at lines 806--818
 
 [37] [38] [39] (./SoftwareEngineeringProject.aux) ) 
 Here is how much of TeX's memory you used:
- 1519 strings out of 492649
- 22594 string characters out of 6129622
+ 1517 strings out of 492649
+ 22528 string characters out of 6129622
  89249 words of memory out of 5000000
- 5399 multiletter control sequences out of 15000+600000
- 5504 words of font info for 20 fonts, out of 8000000 for 9000
+ 5396 multiletter control sequences out of 15000+600000
+ 5672 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,25p,548b,310s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/tex
@@ -466,11 +477,12 @@ f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SoftwareEngineeringProject.pdf (39 pages, 1968639 bytes).
+/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on SoftwareEngineeringProject.pdf (39 pages, 1926331 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 184 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
