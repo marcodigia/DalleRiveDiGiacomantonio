@@ -43,13 +43,18 @@ Di Giacomantonio Marco - 846515 \\[4pt]
 			\end{enumerate}
 			\item Architectural Design
 			\begin{enumerate}
-				\item Overview: High-level components and their interaction
+				\item Overview
+				\item High Level Architecture
 				\item Component View
 				\item Deployment View
 				\item Runtime View
 				\item Component Interfaces
 				\item Selected architectural styles and patterns
-				\item Other design decisions
+				\begin{enumerate}
+				\item Overall Architecture
+				\item Design Pattern
+				\end{enumerate}
+				\item Other Design Decisions
 			\end{enumerate}
 			\item User Interfaces Design
 			\item Requirements Traceability
@@ -70,14 +75,102 @@ Di Giacomantonio Marco - 846515 \\[4pt]
 \newpage
 \section{Architectural Design}
 \subsection{Overview}
+The application uses a three layers achitecture.
+\begin{itemize}
+\item \textbf{Presentation tier}: This layer is used only by companies that want to access to users' data. The user interface consists of a website accesible from a browser. Each webpage contains some JavaScript element in order to enable client-side interaction;
+\item \textbf{Tier One}: This layer is only used from the background app running on the smartwatch. The function of this layer is to communicate with the server all the data gathered form the sensor present on the smartwatch. 
+\item \textbf{Business Logic tier}: This second layer interacts with the Presentation tier and with Tier One. As reguards the interaction with the Presentation tier it enables all the functionalities listed in the RASD document, while the interaction with Tier One consists of the processing of the data coming from the user. This layer also communicates with the database in order to permanently store data and with the external services.
+\item \textbf{Persistence tier}: This layer purpose is to save all the users' (e.g. current position, heartbeat...) and companies' (single user and group user request) data. It shows some interfaces that enable communication with the business logic tier, letting the second level access data.
+\end{itemize}
+\subsection{High Level Acrhitecture}
+\begin{figure}[h!]
+\centering
+    \textbf{}\par\medskip
+	\includegraphics[width= \linewidth]{highlevel.png}
+\end{figure}
+The figure above describes the high-level architecture of the system. All the actors are represented and how they interact with each other.
+Each tier is mapped with a high level architecture block, as represented in the table above.
+\begin{table}[]
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+ & \begin{tabular}[c]{@{}c@{}}User\\ Smartwatch\end{tabular} & \begin{tabular}[c]{@{}c@{}}Company\\ Web Browser\end{tabular} & \begin{tabular}[c]{@{}c@{}}BackEnd\\ App Server\end{tabular} & \begin{tabular}[c]{@{}c@{}}Data\\ Database\end{tabular} \\ \hline
+Presentation Tier &  & X &  &  \\ \hline
+Tier One & X &  &  &  \\ \hline
+Business Logic Tier &  &  & X &  \\ \hline
+Persistence tier &  &  &  & X \\ \hline
+\end{tabular}
+\end{table}
 \subsection{Component View}
+\begin{figure}[h!]
+\centering
+    \textbf{}\par\medskip
+	\includegraphics[width= \linewidth]{comp.png}
+\end{figure}
+This diagram shows the components and how they interact with each other. All of them are part of the system, apart from the email service that is external. The email service is only used to send emails between the company and the user and viceversa. \newline
+The main component is the application server and it consists of the following parts:
+\begin{itemize}
+\item Login Service: responsible for authentication of the companies;
+\item Registration Service: responsible for registration of companies and of single users by using their Apple or Google credentials;
+\item Single User Request Service: enables companies to formulate a request in order to access data of a single user;
+\item Group Request Service: enables companies to formulate a request in orded to access data of a group of users with some specific traits;
+\item Email Service: external service used to forward companies request to single users and to let them answer these requests;
+\item Managing Request Service: enables single user to accept or decline a request by clicking on the corresponding link received in the single user request email that redirects him to our website;
+\item Call Ambulance Service: responsible for calling an ambulace if users data are below a certain value;
+\item Monitor User Data Service: responsible for receiving users data from the user;
+\item View Single User Data Service: shows data of a single user to a company;
+\item Anonymize Group Data Service: responsible for anonymizing data of a group of users;
+\item View Group Data Service: shows data of a group of users to a company;
+\item Router: dispatch a request to the relevant service component;
+\end{itemize}
+The following diagram shows the Model of the System-to-be. 
+\begin{figure}[h!]
+\centering
+    \textbf{}\par\medskip
+	\includegraphics[width= \linewidth]{model.png}
+\end{figure}
+\newpage
+The following diagram represents the UML of the whole system with emphasis on the View component and is shown the interaction between the result and the model.
+\begin{figure}[h!]
+\centering
+    \textbf{}\par\medskip
+	\includegraphics[width= \linewidth]{UMLbig.png}
+\end{figure}
+\newpage
 \subsection{Deployment View}
+\begin{figure}[h!]
+\centering
+    \textbf{}\par\medskip
+	\includegraphics[width= \linewidth]{depl.png}
+\end{figure}
+The diagram shows the architecture of the system-to-be. Data4Help requires the deployment of software on these nodes:
+\begin{itemize}
+\item \textbf{Smartwatch}: the application runs in background in order to collect user's data and communicates them to the Application Server;
+\item \textbf{User Web Browser}: the acceptance of any single user request from the user is made with his own mailbox. By clicking on the acceptance or rejection link the user is redirected on the website and the request is respectively accepted or rejected;
+\item \textbf{Company Web Browser}: is used to access to single user data or to anonymous data of a group of users;
+\item \textbf{Application Server}: the main logic of the application will be deployed here. This server will communicate with all the other nodes - it will collect users' data and store them in the DB server, it will exploit the email server to forward companies requests and it will show to companies the users' saved data from the DB server.
+\item \textbf{DB Server}: it will store all the users' data such as heart rate, current position etc., as well as all the companies requests both for groups and single users;
+\item \textbf{Email Server}: provides the email service used both by the Application server to forward the companies requests and by users to accept them.
+\end{itemize}
+\newpage
 \subsection{Runtime View}
+\newpage
 \subsection{Component Interfaces}
+This diagram shows the interaction between different component interfaces, this information was already present in the class diagram, but here it is shown more clearly.
+\begin{figure}[h!]
+\centering
+    \textbf{}\par\medskip
+	\includegraphics[width= \linewidth]{inter.png}
+\end{figure}
+\newpage
 \subsection{Selected Architectural styles and patterns}
+\subsubsection{Overall Architecture}
+
+\subsubsection{Design Pattern}
+
 \subsection{Other Design Desicions}
 \newpage
 \section{User Interfaces Design}
+The mock-ups for this application have already been presented in the RASD Document.
 \newpage
 \section{Requirements Traceability}
 \newpage
