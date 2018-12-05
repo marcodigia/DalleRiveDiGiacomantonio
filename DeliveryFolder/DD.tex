@@ -223,10 +223,32 @@ This diagram shows the interaction between different component interfaces, this 
 \newpage
 \subsection{Selected Architectural styles and patterns}
 \subsubsection{Overall Architecture}
-
+Our application uses a three-tiers architecture. \newline
+The first tier is composed of the presentation tier and the "Tier One", respectively the first is relative to the company and the second is relative to the user.The presentation tier is the only layer that company can access by using the web browser that displays all the corresponding services; Tier One is used by the user in order to communicate his data to the App server. Both of them communicate only with the Business Logic Tier. \newline
+The second tier, the Business Logic one, controls the application’s functionality by performing processing on users' data and is where lies all the logic that manages with the single or group requests. \newline
+The data tier, or Presistence tier, is where all the data are permanently stored.
 \subsubsection{Design Pattern}
-
+Recommended achitectural pattern:
+\begin{itemize}
+\item Model - View - Controller (MVC): The model is the central component of the pattern. It is the application's dynamic data structure, independent of the user interface. It directly manages the data, logic and rules of the application. The view is any output representation of information. The controller, accepts input and converts it to commands for the model or view.
+In addition to dividing the application into three kinds of components, the model–view–controller design defines the interactions between them.
+The model is responsible for managing the data of the application. It receives user input from the controller. The view means presentation of the model in a particular format. The controller responds to the user input and performs interactions on the data model objects. The controller receives the input, optionally validates it and then passes the input to the model.
+\item Client - Server: The client-server characteristic describes the relationship of cooperating programs in an application. The server component provides a service to many clients, which initiate requests for such services. The client only has to understand the response based on the well-known application protocol. Clients and servers exchange messages in a request–response messaging pattern. The client sends a request, and the server returns a response. All client-server protocols operate in the application layer. This pattern has been chosen for different reasons:
+\begin{itemize}
+\item it’s pratical.
+\item Data synchronization: there is only one application that manage the data.
+\item Having one unique server application improves the maintenability.
+\item the application is indipendednt from the number of clients connected.
+\item improves the security between clients, that known only the server endpoint
+but not other clients.
+\end{itemize}
+\end{itemize}
+Recommended behavioral pattern:
+\begin{itemize}
+\item Observer: lets one or more objects be notified of state changes in other objects within the system. It is useful for the AutomatedSOS service.
+\end{itemize}
 \subsection{Other Design Desicions}
+The users data should be sampled at regular intervals, i.e. every 5 seconds.
 \newpage
 \section{User Interfaces Design}
 The mock-ups for this application have already been presented in the RASD Document.
