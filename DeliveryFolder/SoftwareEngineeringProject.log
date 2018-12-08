@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.19)  8 DEC 2018 10:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.19)  8 DEC 2018 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -157,9 +157,9 @@ Package pdftex.def Info: model.png  used on input line 188.
 (pdftex.def)             Requested size: 345.0pt x 218.8341pt.
 
 [7 <./model.png>]
-Overfull \hbox (55.43588pt too wide) in paragraph at lines 195--196
+Overfull \hbox (52.57477pt too wide) in paragraph at lines 195--196
 \OT1/cmr/m/n/10 of users. Com-pa-nies ac-cess to these data through the web pag
-e(http.//www.Data4Help.com).
+e(https//www.data4help.com).
  []
 
 
@@ -177,13 +177,18 @@ n-ter-faces over which Data4Help
 <1homepage.png, id=42, 1445.4pt x 903.375pt>
 File: 1homepage.png Graphic file (type png)
 <use 1homepage.png>
-Package pdftex.def Info: 1homepage.png  used on input line 233.
+Package pdftex.def Info: 1homepage.png  used on input line 234.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
 <2signupuser.png, id=43, 1445.4pt x 903.375pt>
 File: 2signupuser.png Graphic file (type png)
 <use 2signupuser.png>
-Package pdftex.def Info: 2signupuser.png  used on input line 238.
+Package pdftex.def Info: 2signupuser.png  used on input line 239.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
+
+Overfull \hbox (81.58397pt too wide) in paragraph at lines 230--240
+\OT1/cmr/m/n/10 In this sec-tion are pre-sented some pic-tures that show how th
+e web page https://www.data4help.com
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -192,12 +197,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <3signupcompany.png, id=47, 1445.4pt x 903.375pt>
 File: 3signupcompany.png Graphic file (type png)
 <use 3signupcompany.png>
-Package pdftex.def Info: 3signupcompany.png  used on input line 243.
+Package pdftex.def Info: 3signupcompany.png  used on input line 244.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
 <4logincompany.png, id=48, 1445.4pt x 903.375pt>
 File: 4logincompany.png Graphic file (type png)
 <use 4logincompany.png>
-Package pdftex.def Info: 4logincompany.png  used on input line 248.
+Package pdftex.def Info: 4logincompany.png  used on input line 249.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
 
 
@@ -207,12 +212,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <5companyhompage.png, id=52, 1445.4pt x 903.375pt>
 File: 5companyhompage.png Graphic file (type png)
 <use 5companyhompage.png>
-Package pdftex.def Info: 5companyhompage.png  used on input line 253.
+Package pdftex.def Info: 5companyhompage.png  used on input line 254.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
 <6userprofile.png, id=53, 1445.4pt x 903.375pt>
 File: 6userprofile.png Graphic file (type png)
 <use 6userprofile.png>
-Package pdftex.def Info: 6userprofile.png  used on input line 258.
+Package pdftex.def Info: 6userprofile.png  used on input line 259.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
 
 
@@ -222,7 +227,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <7groupprofile.png, id=57, 1445.4pt x 903.375pt>
 File: 7groupprofile.png Graphic file (type png)
 <use 7groupprofile.png>
-Package pdftex.def Info: 7groupprofile.png  used on input line 263.
+Package pdftex.def Info: 7groupprofile.png  used on input line 264.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
  [13 <./6userprofile.png> <./7groupprofile.png>] [14]
 Overfull \hbox (14.19505pt too wide) in paragraph at lines 305--306
@@ -460,7 +465,7 @@ Here is how much of TeX's memory you used:
  5395 multiletter control sequences out of 15000+600000
  5504 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,25p,842b,310s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,25p,843b,310s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf
@@ -468,7 +473,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf
 ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SoftwareEngineeringProject.pdf (37 pages, 1931755 bytes).
+Output written on SoftwareEngineeringProject.pdf (37 pages, 1933110 bytes).
 PDF statistics:
  174 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams

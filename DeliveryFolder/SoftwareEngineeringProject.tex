@@ -181,7 +181,7 @@ TrackMe also wants to develop a non-intrusive SOS service for elderly people, ca
 \newpage
 \section{Overall Description}
 \subsection{Product perspective}
-Data4Help and AutomatedSOS are intended as a background application that are installed inside a smart watch. The systems-to-be acquire data of the users through the smart watch. A user register himself for Data4Help accessing the website page(http://www.Data4Help.com) that TrackMe provide for this application. Once a user is in the web page he can register himself to Data4Help typing the required information. During the registration process, the user will be required to type his Google or Apple account. This is meant to allow TrackMe to know which device a user has; and among those, let the user picks the one from which data will be acquired. Once a user subscribe to Data4Help, if he has an age that is greater or equal to \emph{Age} he will be automatically enrolled in AutomatedSOS.
+Data4Help and AutomatedSOS are intended as a background application that are installed inside a smart watch. The systems-to-be acquire data of the users through the smart watch. A user register himself for Data4Help accessing the website page(https://www.data4help.com) that TrackMe provide for this application. Once a user is in the web page he can register himself to Data4Help typing the required information. During the registration process, the user will be required to type his Google or Apple account. This is meant to allow TrackMe to know which device a user has; and among those, let the user picks the one from which data will be acquired. Once a user subscribe to Data4Help, if he has an age that is greater or equal to \emph{Age} he will be automatically enrolled in AutomatedSOS.
 \begin{figure}[h!]
 \centering
     \textbf{}\par\medskip
@@ -192,7 +192,7 @@ Considering all the goals previously presented, we can sum up into four categori
 \subsubsection{Acquisition of users' data}
 The system-to-be runs on smart watches, assumed to be able to communicate the data directly to TrackMe's servers. It is also assumed that these smart watches have GPS integrated in their hardware. It means that this product works only with smart watches that have a direct internet connection(they have an integrated SIM card). Future updates will enable to use also smart watch that use Bluetooth to communicate data to a smart phone that then send data towards TrackMe servers.
 \subsubsection{Company access to users' data}
-The system-to-be enables companies to access data of a specific user or of groups of users. Companies access to these data through the web page(http.//www.Data4Help.com). Data are shown in a user-friendly way. Some samples of the web page will be shown in the User Interface section.
+The system-to-be enables companies to access data of a specific user or of groups of users. Companies access to these data through the web page(https//www.data4help.com). Data are shown in a user-friendly way. Some samples of the web page will be shown in the User Interface section.
 \subsubsection{Forwarding of following requests directly to the users and data anonymization}
 Companies are able to send following requests, in order to access user data. The system-to-be allows companies to issue request to users. Every time that a company request to access some data, a request is created and stored inside TrackMe's servers. Analizing the request, TrackMe's servers will decide how to proceed:\\
 \begin{itemize}
@@ -219,14 +219,15 @@ While registering Data4Help, the user is asked to submit his age. Basing on some
 actually there.
 	\item {[D6]} During the registration process the user inserts all the requested data.
 	\item {[D7]} The user has the physical characteristics that he inserted in the system.
-	\item {[D8]} Smart watch connects directly to TrackMe and send the data acquired. Data4Help and AutomatedSOS run only on smart watch with internet access.
-	\item {[D9]} Companies have a username and a vat number and they are unique.
+	\item {[D8]} Smart watch in which the system-to-be is installed have: \emph{GPS, Accelerometer, LTE, Photoplethysmography}.
+	\item {[D9]} Companies have a name and a vat number. VAT number is unique.
 	\item {[D10]} Companies know the SSN of the user.  
 	\item {[D11]} Current user's residence is the CAP of user's residence. 
 \end{itemize}\newpage
 \section{Specific Requirements}
 \subsection{External interface requirements}
 \subsubsection{User interfaces}
+In this section are presented some pictures that show how the web page https://www.data4help.com should look like after the deployment.
 \begin{figure}[h!]
 \centering
     \textbf{Homepage.}\par\medskip
@@ -265,15 +266,14 @@ actually there.
 \subsubsection{Hardware interfaces}
 \begin{itemize}
 	\item GPS
-	\item Bluetooth
-	\item Internet Connection
-	\item Photoplethysmography (PPG)
-	\item Accelerometer
+	\item Internet Connection(LTE)
+	\item Photoplethysmography (PPG): integrated in the smart watch to monitor the heart rate of the user.
+	\item Accelerometer: integrated in the smart watch and used to acquire data.
 \end{itemize}
 \subsubsection{Software interfaces}
 \begin{itemize}
-	\item Google Maps
-	\item Ambulance Service
+	\item Email Service: external interface used to forward the single user request from company to user and the other way around. 
+	\item Ambulance Service: external interface with which AutomatedSOS will interact. 
 \end{itemize}
 \subsubsection{Communication interfaces}
 The network-connected background app uses LTE to send and receive data, while the website uses HTTP protocol.
@@ -308,7 +308,7 @@ San Raffaele hospital wants to create a new service in order to monitor its pati
 \subsubsection{[G3] If user's parameters are below specified thresholds, an ambulance is called within 5 seconds. [G3.1] Ambulance is required at current user's location.}
 \begin{itemize}
 \item {[R4]} The system must be able to monitor the user heart rate through hardware interfaces that are installed in the smart watch.
-\item {[D8]} Smart watch connects directly to TrackMe and send the data acquired. Data4Help and AutomatedSOS run only on smart watch with internet access.
+\item {[D8]} Smart watch in which the system-to-be is installed have: \emph{GPS, Accelerometer, LTE, Photoplethysmography}.
 \item {[D4]} Users position is determined by using the GPS inside the smart watch.
 \item {[D5]} When the system shows the position of a user it means that the user is actually there.
 \item {[D3]} At most 5 seconds are necessary to send user location and call an ambulance when parameters are below the threshold.
@@ -318,11 +318,11 @@ San Raffaele hospital wants to create a new service in order to monitor its pati
 \item {[R5]} The system must allow a company to begin the registration process. During the process the system will ask to provide credentials.
 \item {[D2]} Only real companies can sing up as compaines.
 \item {[R6]} At the end of the registration process, the system must provide to the company a username and a password.
-\item {[D9]} Companies have a username and a vat number and they are unique.
+\item {[D9]} Companies have a name and a vat number. VAT number is unique.
 \end{itemize}
 \subsubsection{[G5] Company can be recognized providing a password and vat number.}
 \begin{itemize}
-\item {[D9]} Companies have a username and a vat number and they are unique.
+\item {[D9]} Companies have a name and a vat number. VAT number is unique.
 \item {[R7]} The company can log in to the website by providing the combination of a username and a password that match its account.
 \end{itemize}
 \subsubsection{[G6] Company can formulate a request to see anonymized data of a group of users.}
