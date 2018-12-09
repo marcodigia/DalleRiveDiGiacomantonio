@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.19)  8 DEC 2018 10:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.19)  9 DEC 2018 09:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -177,15 +177,15 @@ n-ter-faces over which Data4Help
 <1homepage.png, id=42, 1445.4pt x 903.375pt>
 File: 1homepage.png Graphic file (type png)
 <use 1homepage.png>
-Package pdftex.def Info: 1homepage.png  used on input line 234.
+Package pdftex.def Info: 1homepage.png  used on input line 233.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
 <2signupuser.png, id=43, 1445.4pt x 903.375pt>
 File: 2signupuser.png Graphic file (type png)
 <use 2signupuser.png>
-Package pdftex.def Info: 2signupuser.png  used on input line 239.
+Package pdftex.def Info: 2signupuser.png  used on input line 238.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
 
-Overfull \hbox (81.58397pt too wide) in paragraph at lines 230--240
+Overfull \hbox (81.58397pt too wide) in paragraph at lines 229--239
 \OT1/cmr/m/n/10 In this sec-tion are pre-sented some pic-tures that show how th
 e web page https://www.data4help.com
  []
@@ -197,12 +197,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <3signupcompany.png, id=47, 1445.4pt x 903.375pt>
 File: 3signupcompany.png Graphic file (type png)
 <use 3signupcompany.png>
-Package pdftex.def Info: 3signupcompany.png  used on input line 244.
+Package pdftex.def Info: 3signupcompany.png  used on input line 243.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
 <4logincompany.png, id=48, 1445.4pt x 903.375pt>
 File: 4logincompany.png Graphic file (type png)
 <use 4logincompany.png>
-Package pdftex.def Info: 4logincompany.png  used on input line 249.
+Package pdftex.def Info: 4logincompany.png  used on input line 248.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
 
 
@@ -212,12 +212,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <5companyhompage.png, id=52, 1445.4pt x 903.375pt>
 File: 5companyhompage.png Graphic file (type png)
 <use 5companyhompage.png>
-Package pdftex.def Info: 5companyhompage.png  used on input line 254.
+Package pdftex.def Info: 5companyhompage.png  used on input line 253.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
 <6userprofile.png, id=53, 1445.4pt x 903.375pt>
 File: 6userprofile.png Graphic file (type png)
 <use 6userprofile.png>
-Package pdftex.def Info: 6userprofile.png  used on input line 259.
+Package pdftex.def Info: 6userprofile.png  used on input line 258.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
 
 
@@ -227,233 +227,211 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <7groupprofile.png, id=57, 1445.4pt x 903.375pt>
 File: 7groupprofile.png Graphic file (type png)
 <use 7groupprofile.png>
-Package pdftex.def Info: 7groupprofile.png  used on input line 264.
+Package pdftex.def Info: 7groupprofile.png  used on input line 263.
 (pdftex.def)             Requested size: 345.0pt x 215.61519pt.
  [13 <./6userprofile.png> <./7groupprofile.png>] [14]
-Overfull \hbox (14.19505pt too wide) in paragraph at lines 305--306
+Overfull \hbox (14.19505pt too wide) in paragraph at lines 304--305
 []\OT1/cmr/m/n/10 [R2] Each time that an ac-cept-ing or re-ject-ing no-ti-fi-ca
 -tion is sent to Data4Help,
  []
 
 [15]
-Overfull \hbox (3.445pt too wide) in paragraph at lines 332--333
-[]\OT1/cmr/m/n/10 [R10] The sys-tem must al-low the com-pany to send a no-ti-fi
--ca-tion to TrackMe
- []
-
-
-Overfull \hbox (3.445pt too wide) in paragraph at lines 338--339
-[]\OT1/cmr/m/n/10 [R10] The sys-tem must al-low the com-pany to send a no-ti-fi
--ca-tion to TrackMe
- []
-
-[16]
-Overfull \hbox (3.445pt too wide) in paragraph at lines 360--361
-[]\OT1/cmr/m/n/10 [R10] The sys-tem must al-low the com-pany to send a no-ti-fi
--ca-tion to TrackMe
- []
-
-[17]
-<usecase.png, id=74, 1085.05376pt x 603.25375pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 318.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 318.
+ [16] [17]
+<usecase.png, id=76, 1085.05376pt x 603.25375pt>
 File: usecase.png Graphic file (type png)
 <use usecase.png>
-Package pdftex.def Info: usecase.png  used on input line 372.
+Package pdftex.def Info: usecase.png  used on input line 368.
 (pdftex.def)             Requested size: 345.0pt x 191.81168pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 375.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 375.
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 375--399
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 371--393
  [] 
  []
 
 [18 <./usecase.png>]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 402--415
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 396--410
  [] 
  []
 
 [19]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 417--436
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 412--431
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 439--456
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 434--451
  [] 
  []
 
 [20]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 459--473
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 454--468
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 476--490
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 471--485
  [] 
  []
 
 [21]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 493--509
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 488--504
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 512--528
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 507--523
  [] 
  []
 
 [22]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 531--546
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 526--539
  [] 
  []
 
 
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 549--562
+Overfull \hbox (46.36111pt too wide) in paragraph at lines 543--558
  [] 
  []
 
-[23]
-Overfull \hbox (46.36111pt too wide) in paragraph at lines 566--579
- [] 
- []
-
-[24]
-<singlerequest.png, id=98, 1124.2pt x 471.7625pt>
+[23] [24]
+<singlerequest.png, id=100, 1124.2pt x 471.7625pt>
 File: singlerequest.png Graphic file (type png)
 <use singlerequest.png>
-Package pdftex.def Info: singlerequest.png  used on input line 586.
+Package pdftex.def Info: singlerequest.png  used on input line 565.
 (pdftex.def)             Requested size: 345.0pt x 144.77637pt.
  [25 <./singlerequest.png>]
-<grouprequest.png, id=104, 683.55376pt x 471.7625pt>
+<grouprequest.png, id=106, 683.55376pt x 471.7625pt>
 File: grouprequest.png Graphic file (type png)
 <use grouprequest.png>
-Package pdftex.def Info: grouprequest.png  used on input line 591.
+Package pdftex.def Info: grouprequest.png  used on input line 570.
 (pdftex.def)             Requested size: 345.0pt x 238.1122pt.
  [26 <./grouprequest.png>]
-<callambulance.png, id=109, 834.11626pt x 302.12875pt>
+<callambulance.png, id=111, 834.11626pt x 302.12875pt>
 File: callambulance.png Graphic file (type png)
 <use callambulance.png>
-Package pdftex.def Info: callambulance.png  used on input line 596.
+Package pdftex.def Info: callambulance.png  used on input line 575.
 (pdftex.def)             Requested size: 345.0pt x 124.96617pt.
  [27 <./callambulance.png>] [28] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--755
+Underfull \hbox (badness 10000) in paragraph at lines 615--734
 
  []
 
 [30] [31] [32]
-<world1.png, id=130, 1454.43375pt x 416.55624pt>
+<world1.png, id=132, 1454.43375pt x 416.55624pt>
 File: world1.png Graphic file (type png)
 <use world1.png>
-Package pdftex.def Info: world1.png  used on input line 758.
+Package pdftex.def Info: world1.png  used on input line 737.
 (pdftex.def)             Requested size: 345.0pt x 98.806pt.
-<world2.png, id=131, 1411.2725pt x 428.60126pt>
+<world2.png, id=133, 1411.2725pt x 428.60126pt>
 File: world2.png Graphic file (type png)
 <use world2.png>
-Package pdftex.def Info: world2.png  used on input line 759.
+Package pdftex.def Info: world2.png  used on input line 738.
 (pdftex.def)             Requested size: 345.0pt x 104.77605pt.
  [33 <./world1.png> <./world2.png>] [34]
-Overfull \hbox (57.6893pt too wide) in paragraph at lines 770--782
+Overfull \hbox (57.6893pt too wide) in paragraph at lines 749--761
  [] 
  []
 
 
-Overfull \hbox (57.6893pt too wide) in paragraph at lines 785--797
+Overfull \hbox (57.6893pt too wide) in paragraph at lines 764--776
  [] 
  []
 
@@ -469,14 +447,16 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SoftwareEngineeringProject.pdf (37 pages, 1933110 bytes).
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on SoftwareEngineeringProject.pdf (37 pages, 1953842 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
+ 182 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
