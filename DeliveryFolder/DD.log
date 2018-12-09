@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.3)  5 DEC 2018 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.19)  9 DEC 2018 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -169,11 +169,11 @@ File: comp.png Graphic file (type png)
 Package pdftex.def Info: comp.png  used on input line 146.
 (pdftex.def)             Requested size: 345.0pt x 131.6949pt.
  [6 <./comp.png>]
-<model.png, id=34, 1112.155pt x 620.3175pt>
+<model.png, id=34, 982.67125pt x 623.32875pt>
 File: model.png Graphic file (type png)
 <use model.png>
 Package pdftex.def Info: model.png  used on input line 167.
-(pdftex.def)             Requested size: 345.0pt x 192.42896pt.
+(pdftex.def)             Requested size: 345.0pt x 218.8341pt.
  [7 <./model.png>]
 <UMLbig.png, id=40, 1925.1925pt x 1346.02875pt>
 File: UMLbig.png Graphic file (type png)
@@ -214,7 +214,7 @@ Package pdftex.def Info: inter.png  used on input line 221.
  [13 <./inter.png>] [14] [15] [16] [17] [18] [19] (./DD.aux) ) 
 Here is how much of TeX's memory you used:
  1486 strings out of 492649
- 21648 string characters out of 6129622
+ 21648 string characters out of 6129621
  85249 words of memory out of 5000000
  5372 multiletter control sequences out of 15000+600000
  5504 words of font info for 20 fonts, out of 8000000 for 9000
@@ -227,7 +227,7 @@ e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive
 018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/201
 8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on DD.pdf (19 pages, 717561 bytes).
+Output written on DD.pdf (19 pages, 715307 bytes).
 PDF statistics:
  111 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream

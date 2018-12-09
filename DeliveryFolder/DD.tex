@@ -277,39 +277,35 @@ Here is presented the mapping between the RASD goals and software components:
 	\begin{itemize}
 	\item LoginServiceImpl
 	\end{itemize}
-	\item {[G6]} Company can formulate a request to see anonymized data of a group of users. (Requirement \textbf{[R8]-[R9]-[R10]})
+	\item {[G6]} Company can formulate a request to see anonymized data of a group of users. (Requirement \textbf{[R8]-[R9]})
 	\begin{itemize}
 	\item GroupRequestServiceImpl
 	\end{itemize}
-	\item {[G7]} Company can formulate a request to see data of a specific user providing his SSN. (Requirement \textbf{[R10]-[R11]-[R12]})
+	\item {[G7]} Company can formulate a request to see data of a specific user providing his SSN. (Requirement \textbf{[R9]-[R10]})
 	\begin{itemize}
 	\item SingleUserRequestServiceImpl
 	\end{itemize}
-	\item {[G8]} Company can see anonymized data of a group of users. (Requirement \textbf{[R13]})
+	\item {[G8]} Company can see anonymized data of a group of users. (Requirement \textbf{[R11]-R[12]-R[13]})
 	\begin{itemize}
 	\item ViewGroupDataServiceImpl
 	\item AnonymizeGroupDataServiceImpl
 	\end{itemize}
-	\item {[G9]} Company can see data of a specific user providing his SSN. (Requirement \textbf{[R18]})
+	\item {[G9]} Company can see data of a specific user providing his SSN. (Requirement \textbf{[R14]})
 	\begin{itemize}
 	\item ViewSingleUserDataServiceImpl
 	\end{itemize}
-	\item {[G10]} Company can subscribe to users' new data. (Requirement \textbf{[R14]})
+	\item {[G10]} Company can subscribe to users' new data. (Requirement \textbf{[R15]})
 	\begin{itemize}
 	\item ViewSingleUserDataServiceImpl	
 	\item ViewGroupDataServiceImpl
 	\item AnonymizeGroupDataServiceImpl
 	\end{itemize}
-	\item {[G11]} Data4Help can anonymise data. (Requirement \textbf{[R15]})
-	\begin{itemize}
-	\item AnonymizeGroupDataServiceImpl
-	\end{itemize}
-	\item {[G12]} Data4Help can forward companies' requests to users. (Requirement \textbf{[R10]-[R16]})
+	\item {[G11]} Data4Help can forward companies' requests to users. (Requirement \textbf{[R9]-[R16]})
 	\begin{itemize}
 	\item SingleUserRequestServiceImpl
 	\item EmailServiceImpl
 	\end{itemize}
-	\item {[G13]} A user of Data4Help becomes a user of AutomateSOS if he is older than \emph{Age} (Requirement \textbf{[R17]})
+	\item {[G12]} A user of Data4Help becomes a user of AutomateSOS if he is older than \emph{Age} (Requirement \textbf{[R17]-R[18]-R[19]})
 	\begin{itemize}
 	\item RegistrationServiceImpl
 	\end{itemize}
