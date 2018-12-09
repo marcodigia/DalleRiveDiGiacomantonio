@@ -121,6 +121,19 @@ The application uses a three layers achitecture.
 \item \textbf{Business Logic tier}: This second layer interacts with the Presentation tier and with Tier One. As reguards the interaction with the Presentation tier it enables all the functionalities listed in the RASD document, while the interaction with Tier One consists of the processing of the data coming from the user. This layer also communicates with the database in order to permanently store data and with the external services.
 \item \textbf{Persistence tier}: This layer purpose is to save all the users' (e.g. current position, heartbeat...) and companies' (single user and group user request) data. It shows some interfaces that enable communication with the business logic tier, letting the second level access data.
 \end{itemize}
+\begin{figure}[h!]
+\centering
+    \textbf{}\par\medskip
+	\includegraphics[width= \linewidth]{tier.png}
+\end{figure}
+\newpage
+Here is presented a possible ER model that show how the data of the system to be are saved in the persisten tier. 
+\begin{figure}[h!]
+\centering
+    \textbf{}\par\medskip
+	\includegraphics[width= \linewidth]{ER.png}
+\end{figure}
+\newpage
 \subsection{High Level Acrhitecture}
 \begin{figure}[h!]
 \centering
@@ -158,6 +171,7 @@ The main component is the application server and it consists of the following pa
 \item View Single User Data Service: shows data of a single user to a company;
 \item Anonymize Group Data Service: responsible for anonymizing data of a group of users;
 \item View Group Data Service: shows data of a group of users to a company;
+\item Monitor User Data Service: responsible for asking data to the client every 30 seconds, if the user is subscribed to AutomatedSOS checks if the data are below a certain value and communicates with Call Ambulance Service;
 \item Router: dispatch a request to the relevant service component;
 \end{itemize}
 The following diagram shows the Model of the System-to-be. 
@@ -245,10 +259,11 @@ but not other clients.
 \end{itemize}
 Recommended behavioral pattern:
 \begin{itemize}
-\item Observer: lets one or more objects be notified of state changes in other objects within the system. It is useful for the AutomatedSOS service.
+\item Observer: lets one or more objects be notified of state changes in other objects within the system. It is useful for the AutomatedSOS external service, in order to observe the data coming from the user and in case instanciate the CallAmbulance class.
 \end{itemize}
 \subsection{Other Design Desicions}
-The users data should be sampled at regular intervals, i.e. every 5 seconds.
+The users data should be sampled at regular intervals, i.e. every 5 seconds. \newline
+The system uses the email external service in order to let the user accept or reject companies' requests.
 \newpage
 \section{User Interfaces Design}
 The mock-ups for this application have already been presented in the RASD Document.
@@ -316,6 +331,8 @@ Here is presented the mapping between the RASD goals and software components:
 \end{itemize}
 \newpage
 \section{Implementation, Integration and Test Plan}
+\subsection{Implementation Plan}
+\subsection{Integration and Test Plan}
 \newpage
 \section{Effort Spent}
 \section{Resources}
