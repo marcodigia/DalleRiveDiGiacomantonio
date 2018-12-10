@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.19)  9 DEC 2018 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.19)  10 DEC 2018 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -151,91 +151,120 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 <ER.png, id=23, 751.80875pt x 577.15625pt>
 File: ER.png Graphic file (type png)
 <use ER.png>
-Package pdftex.def Info: ER.png  used on input line 127.
+Package pdftex.def Info: ER.png  used on input line 126.
 (pdftex.def)             Requested size: 526.26253pt x 404.0066pt.
- [5 <./ER.png>]
-<highlevel.png, id=29, 144.7809pt x 85.7604pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<tier.png, id=25, 1774.63pt x 804.00375pt>
+File: tier.png Graphic file (type png)
+<use tier.png>
+Package pdftex.def Info: tier.png  used on input line 130.
+(pdftex.def)             Requested size: 345.0pt x 156.2955pt.
+[5]
+<highlevel.png, id=29, 178.5069pt x 103.8279pt>
 File: highlevel.png Graphic file (type png)
 <use highlevel.png>
-Package pdftex.def Info: highlevel.png  used on input line 135.
-(pdftex.def)             Requested size: 345.0pt x 204.40144pt.
+Package pdftex.def Info: highlevel.png  used on input line 138.
+(pdftex.def)             Requested size: 345.0pt x 200.67491pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 139.
+               Default added (so using `tbp') on input line 142.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 140.
+(Font)              <7> on input line 143.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 140.
-[6 <./highlevel.png>]
-<comp.png, id=34, 1858.945pt x 709.65125pt>
+(Font)              <5> on input line 143.
+
+Overfull \hbox (2.44489pt too wide) in paragraph at lines 143--151
+[][] 
+ []
+
+[6 <./ER.png> <./tier.png>]
+<comp.png, id=35, 1858.945pt x 709.65125pt>
 File: comp.png Graphic file (type png)
 <use comp.png>
-Package pdftex.def Info: comp.png  used on input line 154.
+Package pdftex.def Info: comp.png  used on input line 157.
 (pdftex.def)             Requested size: 345.0pt x 131.6949pt.
- [7 <./comp.png>]
-<model.png, id=40, 982.67125pt x 623.32875pt>
+ [7 <./highlevel.png> <./comp.png>]
+Overfull \hbox (1.57016pt too wide) in paragraph at lines 170--171
+[]\OT1/cmr/m/n/10 AnonymizeGroupDataService: re-spon-si-ble for anonymiz-ing da
+ta of a group
+ []
+
+[8]
+<model.png, id=45, 982.67125pt x 623.32875pt>
 File: model.png Graphic file (type png)
 <use model.png>
-Package pdftex.def Info: model.png  used on input line 175.
+Package pdftex.def Info: model.png  used on input line 179.
 (pdftex.def)             Requested size: 345.0pt x 218.8341pt.
- [8 <./model.png>]
-<UMLbig.png, id=45, 1925.1925pt x 1345.025pt>
+ [9 <./model.png>]
+<UMLbig.png, id=50, 1925.1925pt x 1345.025pt>
 File: UMLbig.png Graphic file (type png)
 <use UMLbig.png>
-Package pdftex.def Info: UMLbig.png  used on input line 182.
+Package pdftex.def Info: UMLbig.png  used on input line 186.
 (pdftex.def)             Requested size: 345.0pt x 241.02684pt.
- [9 <./UMLbig.png>]
-<depl.png, id=50, 1147.28625pt x 804.00375pt>
+ [10 <./UMLbig.png>]
+<depl.png, id=55, 1170.3725pt x 1303.87125pt>
 File: depl.png Graphic file (type png)
 <use depl.png>
-Package pdftex.def Info: depl.png  used on input line 189.
-(pdftex.def)             Requested size: 345.0pt x 241.76732pt.
-<callambulance.png, id=51, 834.11626pt x 302.12875pt>
+Package pdftex.def Info: depl.png  used on input line 193.
+(pdftex.def)             Requested size: 345.0pt x 384.36015pt.
+ [11 <./depl.png>]
+<callambulance.png, id=60, 834.11626pt x 302.12875pt>
 File: callambulance.png Graphic file (type png)
 <use callambulance.png>
-Package pdftex.def Info: callambulance.png  used on input line 204.
+Package pdftex.def Info: callambulance.png  used on input line 208.
 (pdftex.def)             Requested size: 345.0pt x 124.96617pt.
-
-[10 <./depl.png>] [11 <./callambulance.png>]
-<grouprequest.png, id=60, 683.55376pt x 471.7625pt>
+ [12 <./callambulance.png>]
+<grouprequest.png, id=65, 683.55376pt x 471.7625pt>
 File: grouprequest.png Graphic file (type png)
 <use grouprequest.png>
-Package pdftex.def Info: grouprequest.png  used on input line 212.
+Package pdftex.def Info: grouprequest.png  used on input line 216.
 (pdftex.def)             Requested size: 345.0pt x 238.1122pt.
- [12 <./grouprequest.png>]
-<singlerequest.png, id=65, 1124.2pt x 471.7625pt>
+ [13 <./grouprequest.png>]
+<singlerequest.png, id=71, 1124.2pt x 471.7625pt>
 File: singlerequest.png Graphic file (type png)
 <use singlerequest.png>
-Package pdftex.def Info: singlerequest.png  used on input line 220.
+Package pdftex.def Info: singlerequest.png  used on input line 224.
 (pdftex.def)             Requested size: 345.0pt x 144.77637pt.
- [13 <./singlerequest.png>]
-<inter.png, id=71, 788.9475pt x 536.0025pt>
+ [14 <./singlerequest.png>]
+<inter.png, id=76, 788.9475pt x 723.70375pt>
 File: inter.png Graphic file (type png)
 <use inter.png>
-Package pdftex.def Info: inter.png  used on input line 229.
-(pdftex.def)             Requested size: 345.0pt x 234.38602pt.
- [14 <./inter.png>] [15] [16] [17] [18] [19] [20] (./DD.aux) ) 
+Package pdftex.def Info: inter.png  used on input line 233.
+(pdftex.def)             Requested size: 345.0pt x 316.46501pt.
+ [15 <./inter.png>] [16] [17] [18] [19] [20]
+<Test.png, id=97, 512.91624pt x 372.39125pt>
+File: Test.png Graphic file (type png)
+<use Test.png>
+Package pdftex.def Info: Test.png  used on input line 349.
+(pdftex.def)             Requested size: 345.0pt x 250.47818pt.
+ [21 <./Test.png>] [22] (./DD.aux) ) 
 Here is how much of TeX's memory you used:
- 1491 strings out of 492649
- 21697 string characters out of 6129621
+ 1501 strings out of 492649
+ 21815 string characters out of 6129621
  85249 words of memory out of 5000000
- 5376 multiletter control sequences out of 15000+600000
+ 5384 multiletter control sequences out of 15000+600000
  5504 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,25p,605b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on DD.pdf (20 pages, 707506 bytes).
+ 41i,14n,25p,948b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb>
+Output written on DD.pdf (22 pages, 803518 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 126 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
