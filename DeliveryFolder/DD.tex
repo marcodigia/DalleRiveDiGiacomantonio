@@ -326,7 +326,8 @@ Here is presented the mapping between the RASD goals and software components:
 \newpage
 \section{Implementation, Integration and Test Plan}
 \subsection{Implementation Plan}
-In the next pages a step-by-step plan of module development is presented. In order to achieve a complete test coverage, of all the functionality that the system-to-be must have, we suggest to adopt a bottom-up approach. This means that once a module is build, it has to be tested individually and then it can be integrated we other already tested modules. This methodology also drive the implementation plan, that is build looking at the way and order in which tests will be run. It turns out that the already presented components can be integrated following these list: 
+In the next pages a step-by-step plan of module development is presented. \\
+In order to achieve a complete test coverage of all the functionalities that the system-to-be must have, we suggest to adopt a bottom-up approach. This means that once a module is build, it has to be tested individually and then it can be integrated with other already tested modules. This methodology also drives the implementation plan, that is build considering the way and the order in which tests will be run.\\ It turns out that the already presented components can be integrated following this list: 
 \begin{enumerate}
 \item Model 
 \item MonitorUserDataServiceImpl
@@ -336,11 +337,11 @@ In the next pages a step-by-step plan of module development is presented. In ord
 \item ViewSingleUserDataServiceImpl, ViewGroupDataServiceImpl
 \item RegistrationServiceImpl, LoginServiceImpl
 \end{enumerate}
-The Model is the first component to be implemented. This is done to build the common ground over which the system-to-be will operate. Doing the Model as first component will force programmers to develop the project having in mind what are the data structures to deal with and their semantic in the system-to-be. \\
-Once the Module is done, MonitorUserDataServiceImpl must be developed. This is the component that every 30 second receives data from all the smart watches and write them in the DB. Because all the other operation that the system-to-be needs to carry out are some how related to data, here is the reason why the first component to implement must be MonitorUserDataServiceImpl. \\
-The next component it is suggested to implement is CallAmbulanceServiceImpl. This is the core component of AutomatedSOS. Since all the AutomatedSOS is basically done through this component, it must be developed and tested it in the very initial stages of the development process. This will let to show the stakeholders a product that has at least the core functionality. \\
-The third block to develop is AnonymizeGroupDataServiceImpl. It is used in by the ViewGroupDataserviceImpl so it must be surely developed before this module, and it is used by the system-to-be, to asks GroupUserRequest, so it also might be developed before this component. \\
-The fourth blocks of components that need to be developed are those related with the \emph{requests} issued by companies. Suppose to have completed the previous steps, these modules will let programmers test a product that almost have all the relevant functionality, since the visual display of the result is not a logical function per se. \\
+The Model is the first component to be implemented. This is done in order to build the common ground over which the system-to-be will operate. Doing the Model as first component will force programmers to develop the project having in mind what are the data structures to deal with and their semantics in the system-to-be. \\
+Once the Model is done, MonitorUserDataServiceImpl must be developed. This is the component that every 30 seconds receives data from all the smartwatches and writes them in the DB. Since all the other operations that the system-to-be needs to carry out are somehow related to data, the first component to implement must be MonitorUserDataServiceImpl. \\
+The next component that is suggested to implement is CallAmbulanceServiceImpl. This is the core component of AutomatedSOS. Since AutomatedSOS is basically supplied through this component, it must be developed and tested in the very initial stages of the development process. This will allow to show stakeholders a product that has at least the core functionality. \\
+The third block to develop is AnonymizeGroupDataServiceImpl. It is used by the ViewGroupDataServiceImpl so it must be surely developed before this module, and it is used by the system-to-be, to ask GroupUserRequest, so it also must be developed before this component. \\
+The fourth block of components that need to be developed are those related with the \emph{requests} issued by companies. Supposed to have completed the previous steps, these modules will let programmers test a product that almost has all the relevant functionalities, since the visual display of the result is not a logical function per se. \\
 The development of the remaining blocks can be done in parallel since they are not related.  
 \subsection{Integration and Test Plan}
 \begin{figure}[h!]
@@ -348,7 +349,11 @@ The development of the remaining blocks can be done in parallel since they are n
     \textbf{}\par\medskip
 	\includegraphics[width= \linewidth]{Test.png}
 \end{figure}
-Here is presented a representation of how the system-to-be must be integrated. How was previously stated in the implementation plan in the development of the modules programmers should be driven by the tests to be performed over the system-to-be. The test plan is carry out following the bottom-up approach. This methodology give the possibility to test each functionality in isolation and integrate it in the final system after have tested it with the modules that used it. This process is time consuming and also quite heavy for the programmers, but it force them to test each functionality as soon as it is produce. So far the Model was not mentioned, but this is just because it is not a functionality, nevertheless it is obvious that all the different modules can be tested \emph{if and only if} the Model is implemented and tested. 
+Here is presented a representation of how the system-to-be must be integrated. \\
+How was previously stated in the implementation plan, in the development of the modules programmers should be driven by the tests to be performed over the system-to-be. \\
+The test plan is carried out following the bottom-up approach. \\
+This methodology gives the possibility to test each functionality in isolation and to integrate it in the final system after having tested it with the modules that use it. This process is time consuming and also quite tiresome for programmers, but it forces them to test each functionality as soon as it is produced. \\
+So far the Model was not mentioned, but this is just because it is not a functionality, nevertheless it is obvious that all the different modules can be tested \emph{if and only if} the Model is implemented and tested. 
 \newpage
 \section{Effort Spent}
 \section{Resources}
