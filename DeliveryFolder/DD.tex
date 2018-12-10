@@ -121,6 +121,13 @@ The application uses a three layers achitecture.
 \item \textbf{Business Logic tier}: This second layer interacts with the Presentation tier and with Tier One. As reguards the interaction with the Presentation tier it enables all the functionalities listed in the RASD document, while the interaction with Tier One consists of the processing of the data coming from the user. This layer also communicates with the database in order to permanently store data and with the external services.
 \item \textbf{Persistence tier}: This layer purpose is to save all the users' (e.g. current position, heartbeat...) and companies' (single user and group user request) data. It shows some interfaces that enable communication with the business logic tier, letting the second level access data.
 \end{itemize}
+\begin{figure}[h!]
+\centering
+    \textbf{}\par\medskip
+	\includegraphics[width= 80mm, scale=0.7]{ER.png}
+\end{figure}
+Here is presented a possible entity-relationship model for the persistence tier.
+\newpage
 \subsection{High Level Acrhitecture}
 \begin{figure}[h!]
 \centering
@@ -139,6 +146,7 @@ Business Logic Tier &  &  & X &  \\ \hline
 Persistence tier &  &  &  & X \\ \hline
 \end{tabular}
 \end{table}
+\newpage
 \subsection{Component View}
 \begin{figure}[h!]
 \centering
@@ -183,7 +191,7 @@ The following diagram represents the UML of the whole system with emphasis on th
 The diagram shows the architecture of the system-to-be. Data4Help requires the deployment of software on these nodes:
 \begin{itemize}
 \item \textbf{Smartwatch}: the application runs in background in order to collect user's data and communicates them to the Application Server;
-\item \textbf{User Web Browser}: the acceptance of any single user request from the user is made with his own mailbox. By clicking on the acceptance or rejection link the user is redirected on the website and the request is respectively accepted or rejected;
+\item \textbf{User Web Browser}: the acceptance of any single user request from the user is made with his own mailbox. By clicking on the link the user is redirected on the website and the request can then be accepted or rejected;
 \item \textbf{Company Web Browser}: is used to access to single user data or to anonymous data of a group of users;
 \item \textbf{Application Server}: the main logic of the application will be deployed here. This server will communicate with all the other nodes - it will collect users' data and store them in the DB server, it will exploit the email server to forward companies requests and it will show to companies the users' saved data from the DB server.
 \item \textbf{DB Server}: it will store all the users' data such as heart rate, current position etc., as well as all the companies requests both for groups and single users;
@@ -238,7 +246,7 @@ The model is responsible for managing the data of the application. It receives u
 \item it’s pratical.
 \item Data synchronization: there is only one application that manage the data.
 \item Having one unique server application improves the maintenability.
-\item the application is indipendednt from the number of clients connected.
+\item the application is independent from the number of clients connected.
 \item improves the security between clients, that known only the server endpoint
 but not other clients.
 \end{itemize}
